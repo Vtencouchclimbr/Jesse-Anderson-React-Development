@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>Jesse Anderson</h1>
       <p>
         
       </p>
