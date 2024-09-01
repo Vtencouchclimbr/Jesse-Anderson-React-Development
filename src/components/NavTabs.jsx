@@ -4,7 +4,7 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="nav nav-tabs bg-dark justify-content-end">
+    <ul style={{ backgroundColor: '#d6d5c9' }} className="nav nav-tabs justify-content-end">
       <li className="nav-item fs-4">
         <Link
           to="/"

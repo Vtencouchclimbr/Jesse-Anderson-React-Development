@@ -7,12 +7,13 @@ const styles = {
   body: {
     height: '100vh',
     margin: '0',
+    backgroundColor: '#b9baa3',
   },
   main: {
     height: '100%',
+    margin: '0',
     display: 'flex',
     flexDirection: 'column',
-    backgroundColor: '#1f7945',
   }
 };
 
