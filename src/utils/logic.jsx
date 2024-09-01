@@ -1,9 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { animationMessage } from '../pages/Contact';
+// import { animationMessage1 } from '../pages/Resume';
+// import { animationMessage2 } from '../pages/Home';
+
 
 export default function TextAnimation() {
   const containerRef = useRef(null);
   const [text, setText] = useState(''); // State to manage the displayed text
-   const fullText = "Thank you for visiting";// The full text to animate
+   const fullText = animationMessage;// The full text to animate
    
   useEffect(() => {
     let characterIndex = 0;
@@ -12,7 +16,7 @@ export default function TextAnimation() {
       if (characterIndex < fullText.length) {
         setText(fullText.slice(0, characterIndex + 1)); // Update the state with the next character
         characterIndex++;
-        setTimeout(updateText, 200); // Continue animation until the full text is displayed
+        setTimeout(updateText, 100); // Continue animation until the full text is displayed
       }
     }
 
@@ -21,5 +25,5 @@ export default function TextAnimation() {
     return () => clearTimeout(updateText); // Cleanup in case the component unmounts
   }, [fullText]);
 
-  return <div ref={containerRef}><h1>{text}</h1></div>;
+  return <div style={{ color: '#f4f4f4' }} ref={containerRef}><h1>{text}</h1></div>;
 }

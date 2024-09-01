@@ -1,13 +1,10 @@
-import TextAnimation from '../utils/logic';
 
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
-import myImage1 from '../utils/Forest.jpg';
-import myImage2 from '../utils/smils.jpg';
-import myImage3 from '../utils/mountain.jpg';
-import myImage4 from '../utils/Forest.jpg';
-import myImage5 from '../utils/Forest.jpg';
-import myImage6 from '../utils/Forest.jpg';
+import myImage1 from '../utils/shapes1.jpg';
+import myImage2 from '../utils/code1.jpg';
+import myImage3 from '../utils/code2.jpg';
+import myImage4 from '../utils/code4.jpg';
+import myImage5 from '../utils/code5.jpg';
+import myImage6 from '../utils/code5.jpg';
 
 
 
@@ -26,55 +23,55 @@ export default function Portfolio() {
         <div className="carousel-item active">
           <img src={myImage1} className="d-block w-100" style={styles.carouselImage} alt="First slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2>PostgreSQL Project</h2>
+          <h2 style={{ color: '#f4f4f4' }}>PostgreSQL Project</h2>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p>Click the links above to find out more</p>
+            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage2} className="d-block w-100" style={styles.carouselImage} alt="Second slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2>PostgreSQL Project</h2>
+          <h2 style={{ color: '#f4f4f4' }}>PostgreSQL Project</h2>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p>Click the links above to find out more</p>
+            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage3} className="d-block w-100" style={styles.carouselImage} alt="Third slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2>PostgreSQL Project</h2>
+          <h2 style={{ color: '#f4f4f4' }}>PostgreSQL Project</h2>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p>Click the links above to find out more</p>
+            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage4} className="d-block w-100" style={styles.carouselImage} alt="Fourth slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2>PostgreSQL Project</h2>
+          <h2 style={{ color: '#f4f4f4' }}>PostgreSQL Project</h2>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p>Click the links above to find out more</p>
+            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage5} className="d-block w-100" style={styles.carouselImage} alt="Fifth slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2>PostgreSQL Project</h2>
+          <h2 style={{ color: '#f4f4f4' }}>PostgreSQL Project</h2>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p>Click the links above to find out more</p>
+            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage6} className="d-block w-100" style={styles.carouselImage} alt="Sixth slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2>PostgreSQL Project</h2>
+          <h2 style={{ color: '#f4f4f4' }}>PostgreSQL Project</h2>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
           <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p>Click the links above to find out more</p>
+            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
           </div>
         </div>
       </div>

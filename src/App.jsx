@@ -1,29 +1,39 @@
 import { Outlet } from 'react-router-dom';
 import NavTabs from './components/NavTabs';
 import Footer from './components/Footer';
+import vertColor from './utils/vertColor.jpg';
 
-const styles = {
 
-  body: {
-    height: '100vh',
-    margin: '0',
-    backgroundColor: '#b9baa3',
-  },
-  main: {
-    height: '100%',
-    margin: '0',
-    display: 'flex',
-    flexDirection: 'column',
-  }
-};
+// const styles = {
+
+//   body: {
+//     height: '100vh',
+//     margin: '0',
+//     backgroundColor: '#16325B',
+//   },
+//   main: {
+//     height: '100%',
+//     margin: '0',
+//     display: 'flex',
+//     flexDirection: 'column',
+//   }
+// };
 
 function App() {
 
   return (
     <>
-      <body style={styles.body}>
+      <body>
         <NavTabs />
-        <main style={styles.main}>
+        <main  style={{ 
+  backgroundImage: `url(${vertColor})`,
+  backgroundSize: 'cover', 
+  backgroundPosition: 'center', 
+  height: '100vh',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+}} >
           <Outlet />
         </main>
         <Footer />
@@ -33,3 +43,14 @@ function App() {
 }
 
 export default App
+
+
+// style={{ 
+//   backgroundImage: `url(${shapes})`,
+//   backgroundSize: 'cover', 
+//   backgroundPosition: 'center', 
+//   height: '100vh',
+//   display: 'flex',
+//   justifyContent: 'center',
+//   alignItems: 'center'
+// }}

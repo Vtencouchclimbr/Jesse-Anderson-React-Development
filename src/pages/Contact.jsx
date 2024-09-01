@@ -1,15 +1,7 @@
 import { useState } from 'react';
 import TextAnimation from '../utils/logic';
 
-
 function Form() {
-  // Here we set two state variables for firstName and lastName using `useState`
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-
   const [formInfo, setformInfo] = useState({
     firstName: "",
     lastName: "",
@@ -18,58 +10,53 @@ function Form() {
   });
 
   const handleInput = e => {
-      setformInfo({...formInfo, [e.target.name]: e.target.value});
-  }
+    setformInfo({ ...formInfo, [e.target.name]: e.target.value });
+  };
 
-  // const handleBlur = () => {
-  //   if (message.trim() === '') {
-  //     alert('This field is required.');
-  //   }
-  // };
+  // Utility function for email validation
+  const validateEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
 
+  // Validate Email
   const emailValidate = (e) => {
     e.preventDefault();
 
-    let email = formInfo.email
+    const { email } = formInfo;
 
     if (email.trim() === '') {
       alert('Please enter your email before submitting.');
     } else if (!validateEmail(email)) {
       alert('Please enter a valid email address.');
     } else {
-      setformInfo({ 
-        firstName: "",
-        lastName: "",
-        email: "",
-        message: ""
-      });
+      handleFormSubmit(e); // Call form submission if validation passes
     }
-    
   };
 
   // Preventing the default behavior of the form submit
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-  // Clear inputs after submit
+    // Clear inputs after submit
     setformInfo({ 
       firstName: "",
       lastName: "",
       email: "",
       message: ""
-    })
+    });
+
+    alert('Form submitted successfully!');
   };
 
   return (
-    <div className="container text-center ">
-      <h1>
-        Hello {formInfo.firstName} {formInfo.lastName}
-      </h1>
+    <div
+    className="container text-center ">
       <form className="form" onSubmit={emailValidate}>
         <input
           value={formInfo.firstName}
           name="firstName"
           onChange={handleInput}
+          style={{ backgroundColor: '#f4f4f4' }}
           type="text"
           placeholder="First Name"
         />
@@ -77,6 +64,7 @@ function Form() {
           value={formInfo.lastName}
           name="lastName"
           onChange={handleInput}
+          style={{ backgroundColor: '#f4f4f4' }}
           type="text"
           placeholder="Last Name"
         />
@@ -84,21 +72,22 @@ function Form() {
           value={formInfo.email}
           name="email"
           onChange={handleInput}
+          style={{ backgroundColor: '#f4f4f4' }}
           type="email"
           placeholder="Youremail@address.com"
         />
         <div>
-        <label htmlFor="message">Your Message:</label>
+        <label style={{ color: '#f4f4f4' }} htmlFor="message">Your Message:</label>
         <textarea
           id="message"
           name="message"
           value={formInfo.message}
           onChange={handleInput}
-          style={{ width: '100%', height: '200px', padding: '10px', fontSize: '16px' }}
+          style={{ width: '100%', height: '200px', padding: '10px', fontSize: '16px', backgroundColor: '#f4f4f4' }}
           placeholder="Type your message here..."
         />
       </div>
-        <button type="submit">
+        <button className="btn btn-outline-light" type="submit">
           Submit
         </button>
       </form>
@@ -108,3 +97,4 @@ function Form() {
 }
 
 export default Form;
+export const animationMessage = "Reach out anytime! Thank you for visiting!";
