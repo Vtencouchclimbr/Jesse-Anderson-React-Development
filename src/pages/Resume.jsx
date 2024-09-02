@@ -8,12 +8,12 @@ import resume from '../utils/Resume.pdf';
 export default function Resume() {
 
   return (
-    <div >
-      <h1 style={{ color: '#f4f4f4' }}>Take a look at my resume</h1>
+    <div style={{ height: '720px' }} className="d-flex flex-column flex-grow-1 align-items-center">
+      <h1 style={{ fontSize: '45px', fontFamily: 'Brush Script MT', color: '#f4f4f4', textDecoration: 'none' }} className="flex-grow-1 align-content-center">Download my resume to explore my qualifications and experience</h1>
       <a href={resume} download="MyDocument.pdf">
-        <button style={{ Color: '#f4f4f4' }} className="btn btn-outline-light">Download PDF</button>
+        <button style={{ Color: '#f4f4f4', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)' }} className="btn btn-outline-light align-content-end flex-grow-1">Download PDF</button>
       </a>
-      <div style={{ color: '#f4f4f4' }}>
+      <div style={{ color: '#f4f4f4' }} className="flex-grow-1 align-content-center">
         <FontAwesomeIcon icon={faCode} size="3x" style={{ marginRight: '10px' }} />
         <FontAwesomeIcon icon={faHtml5} size="3x" style={{ marginRight: '10px' }} />
         <FontAwesomeIcon icon={faCss3} size="3x" style={{ marginRight: '10px' }} />

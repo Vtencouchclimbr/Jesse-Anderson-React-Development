@@ -25,5 +25,5 @@ export default function TextAnimation() {
     return () => clearTimeout(updateText); // Cleanup in case the component unmounts
   }, [fullText]);
 
-  return <div style={{ color: '#f4f4f4' }} ref={containerRef}><h1>{text}</h1></div>;
+  return <div style={{ color: 'antiquewhite', fontFamily: 'Brush Script MT' }} ref={containerRef}><h1 style={{ fontSize: '45px' }}>{text}</h1></div>;
 }

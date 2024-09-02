@@ -1,3 +1,4 @@
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 
 import myImage1 from '../utils/code1.jpg';
 import myImage2 from '../utils/code2.jpg';
@@ -13,7 +14,7 @@ const styles = {
     width: '800px',
     height: '600px',
     objectFit: 'contain',
-  }
+  } 
 };
 
 export default function Portfolio() {
@@ -23,55 +24,55 @@ export default function Portfolio() {
         <div className="carousel-item active">
           <img src={myImage1} className="d-block w-100" style={styles.carouselImage} alt="First slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2 style={{ color: '#f4f4f4' }}>Project #1</h2>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
+          <h2 style={{ color: '#f4f4f4', fontSize: '50px', fontFamily: 'Brush Script MT', textDecoration: 'none' }}>Project #1</h2>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
+            <p style={{ color: '#f4f4f4' }}></p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage2} className="d-block w-100" style={styles.carouselImage} alt="Second slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2 style={{ color: '#f4f4f4' }}>Project #2</h2>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
+          <h2 style={{ color: '#f4f4f4', fontSize: '50px', fontFamily: 'Brush Script MT', textDecoration: 'none' }}>Project #2</h2>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
+            <p style={{ color: '#f4f4f4' }}></p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage3} className="d-block w-100" style={styles.carouselImage} alt="Third slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2 style={{ color: '#f4f4f4' }}>Project #3</h2>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
+          <h2 style={{ color: '#f4f4f4', fontSize: '50px', fontFamily: 'Brush Script MT', textDecoration: 'none' }}>Project #3</h2>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
+            <p style={{ color: '#f4f4f4' }}></p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage4} className="d-block w-100" style={styles.carouselImage} alt="Fourth slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2 style={{ color: '#f4f4f4' }}>Project #4</h2>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
+          <h2 style={{ color: '#f4f4f4', fontSize: '50px', fontFamily: 'Brush Script MT', textDecoration: 'none' }}>Project #4</h2>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
+            <p style={{ color: '#f4f4f4' }}></p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage5} className="d-block w-100" style={styles.carouselImage} alt="Fifth slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2 style={{ color: '#f4f4f4' }}>Project #5</h2>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
+          <h2 style={{ color: '#f4f4f4', fontSize: '50px', fontFamily: 'Brush Script MT', textDecoration: 'none' }}>Project #5</h2>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
+            <p style={{ color: '#f4f4f4' }}></p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={myImage6} className="d-block w-100" style={styles.carouselImage} alt="Sixth slide"/>
           <div className="carousel-caption d-none d-md-block">
-          <h2 style={{ color: '#f4f4f4' }}>Project #6</h2>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
-          <h5><a href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
-            <p style={{ color: '#f4f4f4' }}>Click the links above to find out more</p>
+          <h2 style={{ color: '#f4f4f4', fontSize: '50px', fontFamily: 'Brush Script MT', textDecoration: 'none' }}>Project #6</h2>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Github</a></h5>
+          <h5><a style={{ fontSize: '30px', fontFamily: 'Brush Script MT', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr/Employee-Tracker-PostgreSQL" className="text-white">Deployed site</a></h5>
+            <p style={{ color: '#f4f4f4' }}></p>
           </div>
         </div>
       </div>

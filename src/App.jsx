@@ -23,23 +23,23 @@ function App() {
 
   return (
     <>
-      <body style={{ border: '2px solid #007bff' }} className="d-flex flex-column">
+      <div style={{ height: '100vh' }} className="d-flex flex-column">
       <NavTabs />
-        <main  style={{ 
+        <main style={{ 
   backgroundImage: `url(${vertColor})`,
   backgroundSize: 'cover', 
   backgroundPosition: 'center', 
-  height: '100vh',
+  height: '100%',
   display: 'flex',
+  paddingTop: '0px',
+  paddingBottom: '0px',
   flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center'
 }} >
           
           <Outlet />
         </main>
         <Footer />
-      </body>
+      </div>
     </>
   );
 }

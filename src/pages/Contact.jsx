@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import TextAnimation from '../utils/logic';
 
+
 function Form() {
   const [formInfo, setformInfo] = useState({
     firstName: "",
@@ -49,14 +50,18 @@ function Form() {
   };
 
   return (
-    <div
-    className="container text-center ">
-      <form className="form" onSubmit={emailValidate}>
+    <div  className="container d-flex flex-column flex-grow-1">
+      <div style={{ paddingTop: '30px' }} className="d-flex">
+      <TextAnimation />
+      </div>
+      <form style={{ paddingTop: '80px' }} className="form d-flex align-items-center" onSubmit={emailValidate}>
+        <div className="d-flex flex-column">
         <input
           value={formInfo.firstName}
           name="firstName"
           onChange={handleInput}
-          style={{ backgroundColor: '#f4f4f4' }}
+          className=""
+          style={{ backgroundColor: '#f4f4f4', borderRadius: '8px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)', marginBottom: '20px' }}
           type="text"
           placeholder="First Name"
         />
@@ -64,7 +69,8 @@ function Form() {
           value={formInfo.lastName}
           name="lastName"
           onChange={handleInput}
-          style={{ backgroundColor: '#f4f4f4' }}
+          className=""
+          style={{ backgroundColor: '#f4f4f4', borderRadius: '8px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)', marginBottom: '20px' }}
           type="text"
           placeholder="Last Name"
         />
@@ -72,29 +78,41 @@ function Form() {
           value={formInfo.email}
           name="email"
           onChange={handleInput}
-          style={{ backgroundColor: '#f4f4f4' }}
+          className="align-items-start"
+          style={{ backgroundColor: '#f4f4f4', borderRadius: '8px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)' }}
           type="email"
           placeholder="Youremail@address.com"
         />
-        <div>
-        <label style={{ color: '#f4f4f4' }} htmlFor="message">Your Message:</label>
+        </div>
+        <div className="d-flex align-items-center" style={{  }}>
+        <label className="" style={{ color: '#f4f4f4', paddingLeft: '60px', paddingRight: '0px' }} htmlFor="message"></label>
         <textarea
           id="message"
           name="message"
           value={formInfo.message}
           onChange={handleInput}
-          style={{ width: '100%', height: '200px', padding: '10px', fontSize: '16px', backgroundColor: '#f4f4f4' }}
+          className=""
+          style={{ width: '600px', height: '200px', padding: '10px', fontSize: '16px', backgroundColor: '#f4f4f4', borderRadius: '8px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)' }}
           placeholder="Type your message here..."
         />
-      </div>
-        <button className="btn btn-outline-light" type="submit">
+        <div style={{ paddingLeft: '30px' }}>
+        <button style={{ boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)' }} className="btn btn-outline-light" type="submit">
           Submit
         </button>
+        </div>
+        </div >
       </form>
-      <TextAnimation />
+      <div style={{ width: '100%' }} className="d-flex flex-grow-1 align-items-end">
+        <ul style={{ color: 'antiquewhite', listStyle: 'none' }}>
+          <li>Contact Information:</li>
+          <li style={{ marginLeft: '25px', fontFamily: 'Segoe Script' }}>Jesse Anderson</li>
+          <li style={{ marginLeft: '25px', fontFamily: 'Sans' }}>LmntryLmnt@gmail.com</li>
+          <li style={{ marginLeft: '25px', fontFamily: 'arial' }}>Third item</li>
+        </ul>
+      </div>
     </div>
   );
 }
 
 export default Form;
-export const animationMessage = "Reach out anytime! Thank you for visiting!";
+export const animationMessage = "Thank you for visiting! Please enter your contact information below.↓";
