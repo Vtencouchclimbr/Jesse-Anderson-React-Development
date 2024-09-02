@@ -8,7 +8,7 @@ function NavTabs() {
       <li className="nav-item fs-4">
         <Link
           to="/"
-          className={currentPage === '/Home' ? 'nav-link active ' : 'nav-link'} style={{ color: '#f4f4f4' }}
+          className={currentPage === '/Home' ? 'nav-link' : 'nav-link'} style={{ color: '#f4f4f4' }}
         >
           About
         </Link>
@@ -16,7 +16,7 @@ function NavTabs() {
       <li className="nav-item fs-4">
         <Link
           to="/Portfolio"
-          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'} style={{ color: '#f4f4f4' }}
+          className={currentPage === '/Portfolio' ? 'nav-link' : 'nav-link'} style={{ color: '#f4f4f4' }}
         >
           Portfolio
         </Link>
@@ -24,7 +24,7 @@ function NavTabs() {
       <li className="nav-item fs-4">
         <Link
           to="/Resume"
-          className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'} style={{ color: '#f4f4f4' }}
+          className={currentPage === '/Resume' ? 'nav-link' : 'nav-link'} style={{ color: '#f4f4f4' }}
         >
           Resume
         </Link>
@@ -32,7 +32,7 @@ function NavTabs() {
       <li className="nav-item fs-4">
         <Link
           to="/Contact"
-          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'} style={{ color: '#f4f4f4' }}
+          className={currentPage === '/Contact' ? 'nav-link' : 'nav-link'} style={{ color: '#f4f4f4' }}
         >
           Contact
         </Link>
