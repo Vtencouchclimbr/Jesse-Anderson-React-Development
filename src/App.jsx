@@ -23,17 +23,19 @@ function App() {
 
   return (
     <>
-      <body>
-        <NavTabs />
+      <body style={{ border: '2px solid #007bff' }} className="d-flex flex-column">
+      <NavTabs />
         <main  style={{ 
   backgroundImage: `url(${vertColor})`,
   backgroundSize: 'cover', 
   backgroundPosition: 'center', 
   height: '100vh',
   display: 'flex',
+  flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center'
 }} >
+          
           <Outlet />
         </main>
         <Footer />

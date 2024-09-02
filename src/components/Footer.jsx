@@ -5,10 +5,10 @@ const styles = {
 
     footer: {
       padding: '25px',
-      color: 'white',
       justifyContent: 'center',
       textAlign: 'center',
       alignSelf: 'flex-end',
+      width: '100%',
     }
   };
 
