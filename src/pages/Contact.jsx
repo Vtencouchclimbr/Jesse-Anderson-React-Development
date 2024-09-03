@@ -105,7 +105,7 @@ function Form() {
       <div style={{ width: '100%' }} className="d-flex flex-grow-1 align-items-end">
         <ul style={{ color: 'antiquewhite', listStyle: 'none' }}>
           <li>Contact Information:</li>
-          <li style={{ marginLeft: '25px', fontFamily: 'Segoe Script' }}>Jesse Anderson</li>
+          <li style={{ marginLeft: '25px', fontFamily: 'Lucida Handwriting' }}>Jesse Anderson</li>
           <li style={{ marginLeft: '25px', fontFamily: 'Sans' }}>LmntryLmnt@gmail.com</li>
           <li style={{ marginLeft: '25px', fontFamily: 'arial' }}>Third item</li>
         </ul>
