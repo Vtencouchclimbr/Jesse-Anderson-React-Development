@@ -54,10 +54,10 @@ function Form() {
   return (
     <div  className="container d-flex flex-column flex-grow-1">
       
-      <div style={{ paddingTop: '30px' }} className="d-flex">
+      <div style={{ paddingTop: '80px' }} className="d-flex">
       <TextAnimation />
       </div>
-      <form style={{ paddingTop: '80px' }} className="form d-flex align-items-center" onSubmit={emailValidate}>
+      <form style={{ paddingTop: '50px', paddingLeft: '80px' }} className="form d-flex align-items-center" onSubmit={emailValidate}>
         <div className="d-flex flex-column">
         <input
           value={formInfo.firstName}
@@ -110,9 +110,9 @@ function Form() {
           <li style={{ fontSize: '22px', fontFamily: 'Sans' }}>Contact Information:</li>
           <li style={{ marginLeft: '35px', fontFamily: 'Lucida Handwriting' }}>Jesse Anderson</li>
           <li style={{ marginLeft: '35px', fontFamily: 'Sans' }}>(254)423-5822</li>
-          <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://example.com/link1" target="_blank" rel="noopener noreferrer">LmntryLmnt@gmail.com</a><span><FontAwesomeIcon icon={faGoogle} size="1x" style={{ marginLeft: '5px' }} /></span></li>
-          <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr" target="_blank" rel="noopener noreferrer">Vtencouchclimbr</a><span><FontAwesomeIcon icon={faGithub} size="1x" style={{ marginLeft: '5px' }} /></span></li>
-          <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://www.linkedin.com/in/jesse-anderson-991108297/" target="_blank" rel="noopener noreferrer">jesse-anderson-991108297</a><span><FontAwesomeIcon icon={faLinkedin} size="1x" style={{ marginLeft: '5px' }} /></span></li>
+          <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://example.com/link1" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faGoogle} size="1x" style={{ marginRight: '5px' }} /></span>LmntryLmnt@gmail.com</a></li>
+          <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faGithub} size="1x" style={{ marginRight: '5px' }} /></span>Vtencouchclimbr</a></li>
+          <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://www.linkedin.com/in/jesse-anderson-991108297/" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faLinkedin} size="1x" style={{ marginRight: '5px' }} /></span>jesse-anderson-991108297</a></li>
         </ul>
       </div>
     </div>

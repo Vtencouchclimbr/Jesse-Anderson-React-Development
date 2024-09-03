@@ -16,7 +16,14 @@ export default function TextAnimation() {
       if (characterIndex < fullText.length) {
         setText(fullText.slice(0, characterIndex + 1)); // Update the state with the next character
         characterIndex++;
-        setTimeout(updateText, 100); // Continue animation until the full text is displayed
+        setTimeout(updateText, 75); // Continue animation until the full text is displayed
+      } else {
+        // Reset the animation after a brief pause
+        setTimeout(() => {
+          setText(''); // Clear the text
+          characterIndex = 0; // Reset character index
+          updateText(); // Start animation again
+        }, 1500); // Pause for 1 second before restarting
       }
     }
 
