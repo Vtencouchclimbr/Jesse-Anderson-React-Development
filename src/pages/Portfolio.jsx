@@ -19,6 +19,10 @@ const styles = {
 
 export default function Portfolio() {
   return (
+    <div>
+      <div style={{ marginRight: '287px', marginBottom: '60px', marginTop: '9px' }}className='d-flex flex-column align-items-end'>
+      <div style={{ border: 'solid', color: 'antiquewhite', backgroundColor: 'antiquewhite', borderColor: 'antiquewhite', width: '14px' }} className='d-flex flex-column align-content-start'>↓</div>
+      </div>
     <div id="carouselExample" className="carousel slide d-flex justify-content-center my-auto">
       <div className="carousel-inner">
         <div className="carousel-item active">
@@ -84,6 +88,7 @@ export default function Portfolio() {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
+    </div>
     </div>
   );
 }

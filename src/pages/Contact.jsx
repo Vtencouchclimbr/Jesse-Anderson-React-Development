@@ -52,9 +52,12 @@ function Form() {
   };
 
   return (
+    <div>
+      <div style={{ marginRight: '48px', marginTop: '9px' }}className='d-flex flex-column align-items-end'>
+     <div style={{ border: 'solid', color: 'antiquewhite', backgroundColor: 'antiquewhite', borderColor: 'antiquewhite', width: '14px' }} className='d-flex flex-column align-content-start'>↓</div>
+     </div>
     <div  className="container d-flex flex-column flex-grow-1">
-      
-      <div style={{ paddingTop: '80px' }} className="d-flex">
+      <div style={{ paddingTop: '50px' }} className="d-flex">
       <TextAnimation />
       </div>
       <form style={{ paddingTop: '50px', paddingLeft: '80px' }} className="form d-flex align-items-center" onSubmit={emailValidate}>
@@ -115,6 +118,7 @@ function Form() {
           <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://www.linkedin.com/in/jesse-anderson-991108297/" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faLinkedin} size="1x" style={{ marginRight: '5px' }} /></span>jesse-anderson-991108297</a></li>
         </ul>
       </div>
+    </div>
     </div>
   );
 }

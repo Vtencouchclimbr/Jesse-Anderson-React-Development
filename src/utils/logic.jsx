@@ -23,7 +23,7 @@ export default function TextAnimation() {
           setText(''); // Clear the text
           characterIndex = 0; // Reset character index
           updateText(); // Start animation again
-        }, 1500); // Pause for 1 second before restarting
+        }, 1500); // Pause for 1.5 seconds before restarting
       }
     }
 

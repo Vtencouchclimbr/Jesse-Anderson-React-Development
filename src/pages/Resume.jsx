@@ -8,7 +8,11 @@ import resume from '../utils/Resume.pdf';
 export default function Resume() {
 
   return (
-    <div style={{ height: '720px' }} className="d-flex flex-column flex-grow-1 align-items-center">
+    <div>
+      <div style={{ marginRight: '163px', marginTop: '9px' }}className='d-flex flex-column align-items-end'>
+     <div style={{ border: 'solid', color: 'antiquewhite', backgroundColor: 'antiquewhite', borderColor: 'antiquewhite', width: '14px' }} className='d-flex flex-column align-content-start'>↓</div>
+     </div>
+    <div style={{ height: '500px' }} className="d-flex flex-column flex-grow-1 align-items-center">
       <h1 style={{ fontSize: '45px', fontFamily: 'Brush Script MT', color: '#f4f4f4', textDecoration: 'none' }} className="flex-grow-1 align-content-center">Download my resume to explore my qualifications and experience</h1>
       <a href={resume} download="MyDocument.pdf">
         <button style={{ Color: '#f4f4f4', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)' }} className="btn btn-outline-light align-content-end flex-grow-1">Download PDF</button>
@@ -31,6 +35,8 @@ export default function Resume() {
       </div>
       {/* <TextAnimation fullText={animationMessage1} /> */}
     </div>
+    </div>
+
   );
 }
 

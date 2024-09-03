@@ -3,9 +3,9 @@ import myImage from '../utils/chimp.jpg';
 
 export default function Home() {
   return (
-    <div style={{ height: '720px' }} className="d-flex flex-grow-1">
-      <div style={{ height: '100%', width: '100%' }} className="">
-        <h1 style={{ fontSize: '35px', color: '#f4f4f4', marginTop: '40px', marginLeft: '40px', fontFamily: 'Brush Script MT' }}>A little bit about me:</h1>
+    <div style={{  height: '720px' }} className="d-flex flex-grow-1">
+      <div style={{  height: '100%', width: '100%' }} className="">
+        <h1 style={{  fontSize: '35px', color: '#f4f4f4', marginTop: '40px', marginLeft: '40px', fontFamily: 'Brush Script MT' }}>A little bit about me:</h1>
         <div style={{ marginLeft: '100px', backgroundColor: '#f4f4f4', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)' }} className="card d-flex flex-column align-items-end">
           <div className="card-body">
             <p className="card-text">
@@ -16,9 +16,9 @@ export default function Home() {
         </div>
       </div>
       <div style={{  height: '100%', width: '100%', position: 'relative' }} className="d-flex justify-content-center align-items-center">
+      <span style={{ border: 'solid', color: 'antiquewhite', backgroundColor: 'antiquewhite', borderColor: 'antiquewhite', position: 'relative', top: '-380px', left: '386px' }}>↓</span>
       <h1 style={{ fontSize: '75px', color: 'antiquewhite', fontFamily: 'Lucida Handwriting', zIndex: '100', position: 'relative', top: '200px', right: '400px', zIndex: 100 }} className="">Jesse Anderson</h1>
-      
-        <img style={{ width: '500px', height: '500px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)', position: 'absolute', top: '', left: '', zIndex: 1 }} src={myImage} alt="Image of the devloper" />
+      <img style={{ width: '500px', height: '500px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)', position: 'absolute', top: '', left: '', zIndex: 1 }} src={myImage} alt="Image of the devloper" />
       </div>
       
       {/* <TextAnimation  fullText={animationMessage2} /> */}
