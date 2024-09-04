@@ -2,7 +2,7 @@ import { useState } from 'react';
 import TextAnimation from '../utils/logic';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
+import './Contact.css';
 
 function Form() {
   const [formInfo, setformInfo] = useState({
@@ -16,111 +16,124 @@ function Form() {
     setformInfo({ ...formInfo, [e.target.name]: e.target.value });
   };
 
-  // Utility function for email validation
-  const validateEmail = (email) => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  };
+  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  // Validate Email
   const emailValidate = (e) => {
     e.preventDefault();
-
     const { email } = formInfo;
-
-    if (email.trim() === '') {
+    if (!email.trim()) {
       alert('Please enter your email before submitting.');
     } else if (!validateEmail(email)) {
       alert('Please enter a valid email address.');
     } else {
-      handleFormSubmit(e); // Call form submission if validation passes
+      handleFormSubmit(e);
     }
   };
 
-  // Preventing the default behavior of the form submit
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    // Clear inputs after submit
-    setformInfo({ 
+    setformInfo({
       firstName: "",
       lastName: "",
       email: "",
       message: ""
     });
-
     alert('Form submitted successfully!');
   };
 
   return (
-    <div>
-      <div style={{ marginRight: '48px', marginTop: '9px' }}className='d-flex flex-column align-items-end'>
-     <div style={{ border: 'solid', color: 'antiquewhite', backgroundColor: 'antiquewhite', borderColor: 'antiquewhite', width: '14px' }} className='d-flex flex-column align-content-start'>↓</div>
-     </div>
-    <div  className="container d-flex flex-column flex-grow-1">
-      <div style={{ paddingTop: '50px' }} className="d-flex">
-      <TextAnimation />
+    <div className="container-fluid">
+
+      {/* Text animation */}
+      <div className="dynamic-text">
+        <TextAnimation />
       </div>
-      <form style={{ paddingTop: '50px', paddingLeft: '80px' }} className="form d-flex align-items-center" onSubmit={emailValidate}>
-        <div className="d-flex flex-column">
-        <input
-          value={formInfo.firstName}
-          name="firstName"
-          onChange={handleInput}
-          className=""
-          style={{ backgroundColor: '#f4f4f4', borderRadius: '8px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)', marginBottom: '20px' }}
-          type="text"
-          placeholder="First Name"
-        />
-        <input
-          value={formInfo.lastName}
-          name="lastName"
-          onChange={handleInput}
-          className=""
-          style={{ backgroundColor: '#f4f4f4', borderRadius: '8px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)', marginBottom: '20px' }}
-          type="text"
-          placeholder="Last Name"
-        />
-        <input
-          value={formInfo.email}
-          name="email"
-          onChange={handleInput}
-          className="align-items-start"
-          style={{ backgroundColor: '#f4f4f4', borderRadius: '8px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)' }}
-          type="email"
-          placeholder="Youremail@address.com"
-        />
+
+      {/* Form section */}
+      <form className="row g-3 justify-content-center form-text" onSubmit={emailValidate}>
+        {/* First Name */}
+        <div className="col-md-4 col-lg-3">
+          <input
+            value={formInfo.firstName}
+            name="firstName"
+            onChange={handleInput}
+            className="form-control shadow"
+            type="text"
+            placeholder="First Name"
+          />
         </div>
-        <div className="d-flex align-items-center" style={{  }}>
-        <label className="" style={{ color: '#f4f4f4', paddingLeft: '60px', paddingRight: '0px' }} htmlFor="message"></label>
-        <textarea
-          id="message"
-          name="message"
-          value={formInfo.message}
-          onChange={handleInput}
-          className=""
-          style={{ width: '600px', height: '200px', padding: '10px', fontSize: '16px', backgroundColor: '#f4f4f4', borderRadius: '8px', boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)' }}
-          placeholder="Type your message here..."
-        />
-        <div style={{ paddingLeft: '30px' }}>
-        <button style={{ boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)' }} className="btn btn-outline-light" type="submit">
-          Submit
-        </button>
+
+        {/* Last Name */}
+        <div className="col-md-4 col-lg-3">
+          <input
+            value={formInfo.lastName}
+            name="lastName"
+            onChange={handleInput}
+            className="form-control shadow"
+            type="text"
+            placeholder="Last Name"
+          />
         </div>
-        </div >
+
+        {/* Email */}
+        <div className="col-md-8 col-lg-6">
+          <input
+            value={formInfo.email}
+            name="email"
+            onChange={handleInput}
+            className="form-control shadow"
+            type="email"
+            placeholder="Youremail@address.com"
+          />
+        </div>
+
+        {/* Message */}
+        <div className="col-12">
+          <textarea
+            id="message"
+            name="message"
+            value={formInfo.message}
+            onChange={handleInput}
+            className="form-control shadow"
+            placeholder="Type your message here..."
+            rows="4"
+          />
+        </div>
+
+        {/* Submit Button */}
+        <div className="col-md-12 text-center">
+          <button className="btn btn-outline-light shadow" type="submit">
+            Submit
+          </button>
+        </div>
       </form>
-      <div style={{ width: '100%' }} className="d-flex flex-grow-1 align-items-end">
-        <ul style={{ color: 'antiquewhite', listStyle: 'none', marginBottom: '60px' }}>
-          <li style={{ fontSize: '22px', fontFamily: 'Sans' }}>Contact Information:</li>
-          <li style={{ marginLeft: '35px', fontFamily: 'Lucida Handwriting' }}>Jesse Anderson</li>
-          <li style={{ marginLeft: '35px', fontFamily: 'Sans' }}>(254)423-5822</li>
-          <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://example.com/link1" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faGoogle} size="1x" style={{ marginRight: '5px' }} /></span>LmntryLmnt@gmail.com</a></li>
-          <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://github.com/Vtencouchclimbr" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faGithub} size="1x" style={{ marginRight: '5px' }} /></span>Vtencouchclimbr</a></li>
-          <li><a style={{ marginLeft: '35px', fontFamily: 'Sans', color: 'antiquewhite', textDecoration: 'none' }} href="https://www.linkedin.com/in/jesse-anderson-991108297/" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faLinkedin} size="1x" style={{ marginRight: '5px' }} /></span>jesse-anderson-991108297</a></li>
+
+      {/* Contact Information */}
+      <div className="d-flex mt-4 contact-info">
+        <ul className="list-unstyled">
+          <li style={{ fontSize: '18px', fontFamily: 'Sans', color: 'antiquewhite' }}>Contact Information:</li>
+          <li style={{ fontFamily: 'Lucida Handwriting', color: 'antiquewhite' }}>Jesse Anderson</li>
+          <li style={{ fontFamily: 'Sans', color: 'antiquewhite' }}>(254)423-5822</li>
+          <li>
+            <a href="mailto:LmntryLmnt@gmail.com" style={{ color: 'antiquewhite', textDecoration: 'none' }}>
+              <FontAwesomeIcon icon={faGoogle} size="1x" className="me-2" />LmntryLmnt@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Vtencouchclimbr" target="_blank" rel="noopener noreferrer" style={{ color: 'antiquewhite', textDecoration: 'none' }}>
+              <FontAwesomeIcon icon={faGithub} size="1x" className="me-2" />Vtencouchclimbr
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jesse-anderson-991108297/" target="_blank" rel="noopener noreferrer" style={{ color: 'antiquewhite', textDecoration: 'none' }}>
+              <FontAwesomeIcon icon={faLinkedin} size="1x" className="me-2" />jesse-anderson-991108297
+            </a>
+          </li>
         </ul>
       </div>
     </div>
-    </div>
   );
 }
+
 export default Form;
 export const animationMessage = "Thank you for visiting! Please enter your contact information below.↓";

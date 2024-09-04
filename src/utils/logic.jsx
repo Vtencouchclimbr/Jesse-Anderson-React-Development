@@ -1,25 +1,23 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { animationMessage } from '../pages/Contact';
-// import { animationMessage1 } from '../pages/Resume';
-// import { animationMessage2 } from '../pages/Home';
-
 
 export default function TextAnimation() {
   const containerRef = useRef(null);
   const [text, setText] = useState(''); // State to manage the displayed text
-   const fullText = animationMessage;// The full text to animate
-   
+  const fullText = animationMessage; // The full text to animate
+
   useEffect(() => {
     let characterIndex = 0;
+    let timeoutId;
 
     function updateText() {
       if (characterIndex < fullText.length) {
         setText(fullText.slice(0, characterIndex + 1)); // Update the state with the next character
         characterIndex++;
-        setTimeout(updateText, 75); // Continue animation until the full text is displayed
+        timeoutId = setTimeout(updateText, 75); // Continue animation until the full text is displayed
       } else {
         // Reset the animation after a brief pause
-        setTimeout(() => {
+        timeoutId = setTimeout(() => {
           setText(''); // Clear the text
           characterIndex = 0; // Reset character index
           updateText(); // Start animation again
@@ -29,8 +27,13 @@ export default function TextAnimation() {
 
     updateText(); // Start the animation
 
-    return () => clearTimeout(updateText); // Cleanup in case the component unmounts
+    // Cleanup function to clear timeouts when component unmounts
+    return () => clearTimeout(timeoutId);
   }, [fullText]);
 
-  return <div style={{ color: 'antiquewhite', fontFamily: 'Brush Script MT' }} ref={containerRef}><h1 style={{ fontSize: '45px' }}>{text}</h1></div>;
+  return (
+    <div style={{ color: 'antiquewhite', fontFamily: 'Brush Script MT' }} ref={containerRef}>
+      <h1 style={{ fontSize: '30px' }}>{text}</h1>
+    </div>
+  );
 }

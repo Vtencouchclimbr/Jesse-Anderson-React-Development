@@ -1,0 +1,6 @@
+/* Media query for larger screens */
+  @media (min-width: 1200px) {
+    .icon {
+      margin-top: 100px;
+    }
+  } 

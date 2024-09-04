@@ -1,8 +1,54 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #205375;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 1rem;
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem;
+  }
 
+  footer {
+    padding: 0.5rem;
+  }
+}
+
+/* Media Queries for Large Screens */
+@media (min-width: 1600px) {
+  main {
+    padding: 3rem;
+  }
+}
