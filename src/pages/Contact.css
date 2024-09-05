@@ -36,7 +36,8 @@
 
 @media (min-width: 1200px) {
     .contact-info {
-        text-align: left;
-        align-items: flex-start;
+      text-align: left;
+      align-items: flex-start;
+      margin-left: 150px;
     }
   } 
