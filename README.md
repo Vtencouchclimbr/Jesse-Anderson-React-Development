@@ -7,6 +7,7 @@ This portfolio serves as a comprehensive showcase of professional work in full s
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Video](#video)
 - [Technology Used](#technology-used)
 - [Tests](#tests)
 - [Questions](#questions)
@@ -27,12 +28,14 @@ cd projectName
 ```bash
 npm i
 ```
-4. Start the Development Server.
+3. Build Application.
 ```bash
-npm run dev
+npm run build
 ```
-5. Open your browser and visit the local address to view the project.
-
+4. Start the Development Server. Your browser will open automatically.
+```bash
+npm start
+```
 ## Usage
 
 The site is structured to provide a comprehensive overview of the developer’s work, skills, and contact information. Below is a guide on how to navigate and utilize each section of the site:
@@ -64,7 +67,7 @@ The site is structured to provide a comprehensive overview of the developer’s 
 - **[React](https://reactjs.org/):** The core JavaScript library used for building user interfaces, ensuring a dynamic and responsive user experience.
 
 ## Tests
-There are currentoly no tests created
+There are currently no tests created
 
 ## Questions
 If you have any questions, please reach out to me:
