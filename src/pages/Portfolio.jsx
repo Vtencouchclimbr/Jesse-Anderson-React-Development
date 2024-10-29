@@ -1,6 +1,7 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Portfolio.css';
-import Samurai1 from '../utils/Samurai1.jpg';
+import code from '../utils/backgrounds/code.jpg';
+
 
 import myImage1 from '../utils/projectThumbnails/code1.jpg';
 import myImage2 from '../utils/projectThumbnails/code2.jpg';
@@ -26,7 +27,7 @@ export default function Portfolio() {
   return (
     <div className="d-flex flex-column justify-content-center flex-lg-row flex-grow-1" style={{
       minHeight: '100vh',
-      backgroundImage: `url(${Samurai1})`,
+      backgroundImage: `url(${code})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',

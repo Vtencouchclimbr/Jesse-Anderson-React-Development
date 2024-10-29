@@ -1,5 +1,5 @@
 // import Icon1 from '../utils/mongodb.png';
-import Samurai1 from '../utils/Samurai1.jpg';
+import crazy1 from '../utils/backgrounds/crazy1.jpg';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,9 +19,10 @@ import './Resume.css';
 
 export default function Resume() {
   return (
-    <div className="d-flex flex-column justify-content-center flex-lg-row flex-grow-1" style={{
+    <div className="d-flex flex-column justify-content-center flex-lg-row flex-grow-1" 
+    style={{
       minHeight: '100vh',
-      backgroundImage: `url(${Samurai1})`,
+      backgroundImage: `url(${crazy1})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',

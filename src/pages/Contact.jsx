@@ -3,7 +3,7 @@ import TextAnimation from '../utils/logic';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css';
-import Samurai from '../utils/Samurai.jpg';
+import forest1 from '../utils/backgrounds/forest1.jpg';
 
 function Form() {
   const [formInfo, setformInfo] = useState({
@@ -45,7 +45,7 @@ function Form() {
   return (
     <div className="d-flex flex-column justify-content-center flex-lg-row flex-grow-1" style={{
       minHeight: '100vh',
-      backgroundImage: `url(${Samurai})`,
+      backgroundImage: `url(${forest1})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
