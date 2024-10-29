@@ -1,3 +1,7 @@
+// import Icon1 from '../utils/mongodb.png';
+import Samurai1 from '../utils/Samurai1.jpg';
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHtml5,
@@ -15,19 +19,25 @@ import './Resume.css';
 
 export default function Resume() {
   return (
-    <div className="container">
+    <div className="d-flex flex-column justify-content-center flex-lg-row flex-grow-1" style={{
+      minHeight: '100vh',
+      backgroundImage: `url(${Samurai1})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}>
       <div className="d-flex flex-column align-items-center text-center py-5">
-        <h1 className="display-4" style={{ fontFamily: 'Brush Script MT', color: '#f4f4f4' }}>
+        <h1 className="display-4" style={{ fontFamily: 'Brush Script MT', color: 'antiquewhite' }}>
           Download my resume to explore my qualifications and experience
         </h1>
 
-        <a href={resume} download="MyDocument.pdf" className="my-4">
-          <button className="btn btn-outline-light btn-lg shadow">
+        <a href={resume} download="MyDocument.pdf" style={{ color: 'antiquewhite' }} className="my-4">
+          <button style={{ color: 'antiquewhite' }} className="btn btn-outline-light btn-lg shadow">
             Download PDF
           </button>
         </a>
 
-        <div className="icon d-flex flex-wrap justify-content-center" style={{ color: '#f4f4f4' }}>
+        <div className="icon d-flex flex-wrap justify-content-center" style={{ color: 'antiquewhite' }}>
           <FontAwesomeIcon icon={faCode} size="3x" className="mx-3 my-2" />
           <FontAwesomeIcon icon={faHtml5} size="3x" className="mx-3 my-2" />
           <FontAwesomeIcon icon={faCss3} size="3x" className="mx-3 my-2" />
@@ -42,6 +52,9 @@ export default function Resume() {
           <FontAwesomeIcon icon={faCodeBranch} size="3x" className="mx-3 my-2" />
           <FontAwesomeIcon icon={faGithub} size="3x" className="mx-3 my-2" />
           <FontAwesomeIcon icon={faGhost} size="3x" className="mx-3 my-2" />
+        </div>
+        <div>
+        {/* <img src={Icon1} alt="description" style={{ width: '60px', height: '60px' }} />; */}
         </div>
       </div>
     </div>
