@@ -4,7 +4,7 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#205375' }}>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand fs-3" to="/" style={{ fontFamily: 'Lucida Handwriting', color: 'antiquewhite', marginLeft: '20px' }}>
           Jesse Anderson
