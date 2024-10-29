@@ -1,12 +1,13 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Portfolio.css';
+import Samurai1 from '../utils/Samurai1.jpg';
 
-import myImage1 from '../utils/code1.jpg';
-import myImage2 from '../utils/code2.jpg';
-import myImage3 from '../utils/code3.jpg';
-import myImage4 from '../utils/code4.jpg';
-import myImage5 from '../utils/code5.jpg';
-import myImage6 from '../utils/code7.jpg';
+import myImage1 from '../utils/projectThumbnails/code1.jpg';
+import myImage2 from '../utils/projectThumbnails/code2.jpg';
+import myImage3 from '../utils/projectThumbnails/code3.jpg';
+import myImage4 from '../utils/projectThumbnails/code4.jpg';
+import myImage5 from '../utils/projectThumbnails/code5.jpg';
+import myImage6 from '../utils/projectThumbnails/code7.jpg';
 
 const styles = {
   carouselImage: {
@@ -23,7 +24,13 @@ const styles1 = {
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="d-flex flex-column justify-content-center flex-lg-row flex-grow-1" style={{
+      minHeight: '100vh',
+      backgroundImage: `url(${Samurai1})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}>
       <div id="carouselExample" className="carousel slide d-flex justify-content-center my-auto">
         <div className="carousel-inner scrnsht">
           <div className="carousel-item active">

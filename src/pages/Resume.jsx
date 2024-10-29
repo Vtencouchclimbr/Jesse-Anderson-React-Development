@@ -1,4 +1,6 @@
-import Icon1 from '../utils/mongodb.png';
+// import Icon1 from '../utils/mongodb.png';
+import Samurai1 from '../utils/Samurai1.jpg';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -17,7 +19,13 @@ import './Resume.css';
 
 export default function Resume() {
   return (
-    <div className="container">
+    <div className="d-flex flex-column justify-content-center flex-lg-row flex-grow-1" style={{
+      minHeight: '100vh',
+      backgroundImage: `url(${Samurai1})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}>
       <div className="d-flex flex-column align-items-center text-center py-5">
         <h1 className="display-4" style={{ fontFamily: 'Brush Script MT', color: 'antiquewhite' }}>
           Download my resume to explore my qualifications and experience
@@ -46,7 +54,7 @@ export default function Resume() {
           <FontAwesomeIcon icon={faGhost} size="3x" className="mx-3 my-2" />
         </div>
         <div>
-        <img src={Icon1} alt="description" style={{ width: '60px', height: '60px' }} />;
+        {/* <img src={Icon1} alt="description" style={{ width: '60px', height: '60px' }} />; */}
         </div>
       </div>
     </div>

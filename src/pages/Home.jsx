@@ -1,9 +1,19 @@
 import myImage from '../utils/me3.png';
 import './Home.css';
+import Samurai2 from '../utils/Samurai2.jpg';
+
 
 export default function Home() {
   return (
-    <div className="d-flex flex-column flex-lg-row flex-grow-1" style={{ minHeight: '100vh' }}>
+    <div className="d-flex flex-column flex-lg-row flex-grow-1"
+      style={{
+          minHeight: '100vh',
+          backgroundImage: `url(${Samurai2})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+        >
       {/* Left Section with Text */}
       <div className="flex-grow-1 d-flex flex-column p-3">
         <h1
