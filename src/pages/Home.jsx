@@ -1,6 +1,6 @@
 import myImage from '../utils/me3.png';
 import './Home.css';
-import Samurai2 from '../utils/Samurai2.jpg';
+import forest1 from '../utils/backgrounds/Dark4.jpg';
 
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <div className="d-flex flex-column flex-lg-row flex-grow-1"
       style={{
           minHeight: '100vh',
-          backgroundImage: `url(${Samurai2})`,
+          backgroundImage: `url(${forest1})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
