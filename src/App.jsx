@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
-import vertColor from './utils/vertColor.jpg';
+import vertColor from './utils/Samurai2.jpg';
 
 function App() {
   return (

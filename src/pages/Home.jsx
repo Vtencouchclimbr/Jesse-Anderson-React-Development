@@ -1,4 +1,4 @@
-import myImage from '../utils/chimp.jpg';
+import myImage from '../utils/me3.png';
 import './Home.css';
 
 export default function Home() {
@@ -8,8 +8,8 @@ export default function Home() {
       <div className="flex-grow-1 d-flex flex-column p-3">
         <h1
           style={{
+            color: 'antiquewhite',
             fontSize: '35px',
-            color: '#f4f4f4',
             marginTop: '40px',
             marginLeft: '40px',
             fontFamily: 'Brush Script MT',
@@ -19,24 +19,24 @@ export default function Home() {
         </h1>
         <div
           style={{
+            color: 'antiquewhite',
             marginLeft: '100px',
-            backgroundColor: '#f4f4f4',
+            backgroundColor: 'rgb(63, 61, 78)',
             boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)',
           }}
           className="card d-flex flex-column align-items-end"
         >
-          <div className="card-body">
+          <div style={{ backgroundColor: 'rgb(63, 61, 78)', color: 'antiquewhite' }} className="card-body">
             <p className="card-text">
-              I am a full-stack web developer and software engineer originally from Maryland, now residing in Utah,
-              where I find inspiration in the majestic mountain landscapes. My passion for the outdoors is matched by
-              my dedication to my craft, whether I'm climbing new heights in nature or tackling complex challenges in
-              software development.
-              <br />
-              In addition to my technical expertise, I have a deep appreciation for music, particularly playing the
-              piano, which allows me to express my creativity in different ways. I also enjoy cooking, where I can
-              experiment with new recipes, and I find intellectual stimulation in reading and watching films. These
-              interests complement my professional life, helping me maintain a well-rounded and balanced approach to
-              both work and personal fulfillment.
+              A dedicated and versatile professional from Maryland, I bring a unique blend of technical and creative interests to <br /> 
+              my role as a Software Engineer and Full Stack Developer. With a strong foundation from over 15 years in land surveying <br /> 
+              and design for civil and structural engineering, I developed a keen attention to detail and problem-solving skills. <br />
+              Beyond work, I enjoy an active lifestyle, immersing myself in the outdoors, and cultivating a passion for music. <br />
+              Recently graduating from the University of Utah's Web Development Coding Bootcamp, I’ve built a comprehensive skill set <br /> 
+              critical to modern software development. My technical expertise spansHTML, CSS, JavaScript, TypeScript, Node.js, Express, SQL, <br /> 
+              PostgreSQL, React, the PERN and MERN stacks, NoSQL databases, MongoDB, and Mongoose. Additionally, I’m proficient with <br /> 
+              JSON Web Tokens (JWTs), Apollo, Vitest, Cypress, and Python, along with tools like CircleCI, Insomnia, Render, Netlify, <br /> 
+              GitHub Actions, GitHub, and pseudocode. I bring strong problem-solving abilities and a solid foundation in AI and document research. My five-year plan includes advancing to a senior developer role, becoming a team manager, and collaborating on personal projects with fellow developers. Throughout, I remain committed to continuous learning, growth, and contributing to high-impact projects within dynamic teams
             </p>
           </div>
         </div>
@@ -49,6 +49,7 @@ export default function Home() {
         </h1>
         <img
           className="img-fluid"
+          style={{ borderRadius: '5%', width: '100%'}}
           src={myImage}
           alt="Image of the developer"
         />
