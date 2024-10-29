@@ -22,10 +22,10 @@ export default function Home() {
             fontSize: '35px',
             marginTop: '40px',
             marginLeft: '40px',
-            fontFamily: 'Brush Script MT',
+            fontFamily: 'Arial',
           }}
         >
-          A little bit about me:
+          Welcome to my portfolio
         </h1>
         <div
           style={{
@@ -57,6 +57,9 @@ export default function Home() {
         <h1 className="signature">
           Jesse Anderson
         </h1>
+        <h2 style={{ color: 'antiquewhite'}} className="titleText">
+        Full Stack Developer | Software Engineer
+        </h2>
         <img
           className="img-fluid"
           style={{ borderRadius: '5%', width: '100%'}}
