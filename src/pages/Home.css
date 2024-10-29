@@ -4,6 +4,16 @@ h1 {
   z-index: 1;
 }
 
+@media (min-width: 1200px) {
+  .titleText {
+    font-size: 30px;
+    font-family: Arial;
+    position: absolute;
+    right: 400px;
+    bottom: 125px;
+  }
+}
+
 /* Media query for larger screens */
 @media (min-width: 1200px) {
   .img-fluid {
@@ -30,5 +40,13 @@ h1 {
     position: absolute;
     right: 230px;
     bottom: 275px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-body {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
   }
 }

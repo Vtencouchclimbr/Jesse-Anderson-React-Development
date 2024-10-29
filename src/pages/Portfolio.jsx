@@ -11,19 +11,23 @@ export default function Portfolio() {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
     }}>
-    <ul class="list-group">
-      <li class="list-group-item">Tsp</li>
-      <li class="list-group-item">Yes, Chef!</li>
-      <li class="list-group-item">14</li>
-      <li class="list-group-item">18</li>
-      <li class="list-group-item">19</li>
-    </ul>
-      <div>
-      <button className="glow-on-hover" type="button">View My Projects</button>
+      <div className="information d-flex flex-column justify-content-center align-items-center flex-lg-row flex-grow-1">
+      <div className="btns"> 
+        <div>
+        <button className="glow-on-hover eachbtn" type="button">View My Projects</button>
+        </div>
+        <div>
+        <button className="glow-on-hover eachbtn" type="button">View My Code</button>
+        </div>
+      </div>   
+        <ul className="list-group projects">
+        <li className="list-group-item">Tsp</li>
+        <li className="list-group-item">Yes, Chef!</li>
+        <li className="list-group-item">14</li>
+        <li className="list-group-item">18</li>
+        <li className="list-group-item">19</li>
+        </ul>
+        </div>
       </div>
-      <div>
-      <button className="glow-on-hover" type="button">View My Code</button>
-      </div>
-    </div>
   );
 }

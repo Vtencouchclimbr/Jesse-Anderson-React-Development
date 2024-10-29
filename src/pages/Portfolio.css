@@ -1,13 +1,36 @@
-@media (min-width: 1200px) {
-    .scrnsht {
-        display: flex;
-        align-items: center;
-        max-height: 800px;
-        max-width: 800px;
-    }
-  } 
 
-  .glow-on-hover {
+
+@media (min-width: 1200px) {
+    .information {
+        display: flex;
+    }
+} 
+
+@media (min-width: 1200px) {
+    .btns {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 5;
+        align-items: center;
+    }
+} 
+
+@media (min-width: 1200px) {
+    .eachbtn {
+        margin: 10px;
+    }
+} 
+
+@media (min-width: 1200px) {
+    .projects {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+} 
+
+
+/* Glow button CSS, currently available on full-screen only */
+.glow-on-hover {
     min-width: 40px;
     width: 170px;
     height: 50px;
@@ -23,7 +46,7 @@
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #111, #fff);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -67,3 +90,5 @@
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+/* Glow button CSS */
+
