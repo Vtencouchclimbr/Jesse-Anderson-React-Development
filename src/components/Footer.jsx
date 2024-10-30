@@ -3,7 +3,7 @@ import { faLinkedin, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-i
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-center py-4">
+    <footer className="bg-dark text-center py-4 footer">
       {/* LinkedIn */}
       <a
         href="https://www.linkedin.com/in/jesse-anderson-991108297"
