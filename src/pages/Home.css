@@ -14,7 +14,6 @@ h1 {
   }
 }
 
-/* Media query for larger screens */
 @media (min-width: 1200px) {
   .img-fluid {
     width: 800px;

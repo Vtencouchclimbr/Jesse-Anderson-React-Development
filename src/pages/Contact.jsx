@@ -102,7 +102,7 @@ function Form() {
             value={formInfo.message}
             onChange={handleInput}
             className="form-control shadow"
-            placeholder="Type your message here..."
+            placeholder="Tell me what you think. Tell me what you liked. Tell me what you would like to see. Tell me anything... "
             rows="4"
           />
         </div>

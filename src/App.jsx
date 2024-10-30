@@ -1,10 +1,5 @@
 
-
-// import { Outlet } from 'react-router-dom';
-// import Header from './components/Header';
-// import Footer from './components/Footer';
 import NavTabs from './components/NavTabs';
-// import Resume from './pages/Resume';
 import Resume from './pages/Resume';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
@@ -14,6 +9,7 @@ import './App.css';
 function App() {
   return (
     <>
+    
      <div className="portfolio"> 
       <NavTabs />
       <section id="home" className="container-fluid min-vh-100 d-flex align-items-center justify-content-center">

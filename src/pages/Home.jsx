@@ -1,6 +1,6 @@
 import myImage from '../utils/me3.png';
 import './Home.css';
-import forest1 from '../utils/backgrounds/Dark4.jpg';
+import Dark4 from '../utils/backgrounds/Dark4.jpg';
 
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <div className="d-flex flex-column flex-lg-row flex-grow-1"
       style={{
           minHeight: '100vh',
-          backgroundImage: `url(${forest1})`,
+          backgroundImage: `url(${Dark4})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -33,8 +33,8 @@ export default function Home() {
             marginLeft: '100px',
             backgroundColor: 'rgb(63, 61, 78)',
             boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)',
-          }}
-          className="card d-flex flex-column align-items-end"
+          }} 
+          className=" card d-flex flex-column align-items-end"
         >
           <div style={{ backgroundColor: 'rgb(63, 61, 78)', color: 'antiquewhite' }} className="card-body">
             <p className="card-text">
