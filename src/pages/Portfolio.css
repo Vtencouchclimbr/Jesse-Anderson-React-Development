@@ -9,7 +9,7 @@
 @media (min-width: 1200px) {
     .btns {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         flex-grow: 5;
         align-items: center;
     }
@@ -17,7 +17,7 @@
 
 @media (min-width: 1200px) {
     .eachbtn {
-        margin: 10px;
+        margin: 40px;
     }
 } 
 
@@ -30,9 +30,14 @@
 
 @media (min-width: 1200px) {
     .list-group-item {
-        background-color: #e7a109;
+        background-color: #111;
     }
 } 
+
+.list-group-item {
+    background-color: #111;
+}
+
 
 
 /* Glow button CSS, currently available on full-screen only */
@@ -52,7 +57,7 @@
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #111, #fff, #bac295, #e7a109);
+    background: linear-gradient(45deg, #111, #fff, #bac295, #e7a109, #1859bb);
     position: absolute;
     top: -2px;
     left:-2px;
