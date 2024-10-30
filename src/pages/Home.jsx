@@ -43,7 +43,7 @@ export default function Home() {
               and design for civil and structural engineering, I developed a keen attention to detail and problem-solving skills. <br />
               Beyond work, I enjoy an active lifestyle, immersing myself in the outdoors, and cultivating a passion for music. <br />
               Recently graduating from the University of Utah's Web Development Coding Bootcamp, I’ve built a comprehensive skill set <br /> 
-              critical to modern software development. My technical expertise spansHTML, CSS, JavaScript, TypeScript, Node.js, Express, SQL, <br /> 
+              critical to modern software development. My technical expertise spans HTML, CSS, JavaScript, TypeScript, Node.js, Express, SQL, <br /> 
               PostgreSQL, React, the PERN and MERN stacks, NoSQL databases, MongoDB, and Mongoose. Additionally, I’m proficient with <br /> 
               JSON Web Tokens (JWTs), Apollo, Vitest, Cypress, and Python, along with tools like CircleCI, Insomnia, Render, Netlify, <br /> 
               GitHub Actions, GitHub, and pseudocode. I bring strong problem-solving abilities and a solid foundation in AI and document research. My five-year plan includes advancing to a senior developer role, becoming a team manager, and collaborating on personal projects with fellow developers. Throughout, I remain committed to continuous learning, growth, and contributing to high-impact projects within dynamic teams
