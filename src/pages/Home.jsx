@@ -58,7 +58,7 @@ export default function Home() {
           Jesse Anderson
         </h1>
         <h2 style={{ color: 'antiquewhite'}} className="titleText">
-        Full Stack Developer | Software Engineer
+        Full Stack Developer && Software Engineer
         </h2>
         <img
           className="img-fluid"

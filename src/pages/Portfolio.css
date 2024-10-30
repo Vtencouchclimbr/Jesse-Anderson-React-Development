@@ -22,9 +22,15 @@
 } 
 
 @media (min-width: 1200px) {
-    .projects {
+    .list-group {
         flex-grow: 1;
-        margin-right: 10px;
+        margin-right: 30px;
+    }
+} 
+
+@media (min-width: 1200px) {
+    .list-group-item {
+        background-color: #e7a109;
     }
 } 
 
@@ -46,7 +52,7 @@
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #111, #fff);
+    background: linear-gradient(45deg, #111, #fff, #bac295, #e7a109);
     position: absolute;
     top: -2px;
     left:-2px;

@@ -50,14 +50,14 @@ function Form() {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
     }}>
-
+      <div className="msgform">
       {/* Text animation */}
       <div className="dynamic-text">
         <TextAnimation />
       </div>
 
       {/* Form section */}
-      <form className="row g-3 justify-content-center form-text" onSubmit={emailValidate}>
+      <form className="form-text row g-3 justify-content-center" onSubmit={emailValidate}>
         {/* First Name */}
         <div className="col-md-4 col-lg-3">
           <input
@@ -116,31 +116,32 @@ function Form() {
       </form>
 
       {/* Contact Information */}
-      <div className="d-flex mt-4 contact-info">
+      <div className="contact-info d-flex mt-4 justify-content-center">
         <ul className="list-unstyled">
-          <li style={{ fontSize: '18px', fontFamily: 'Sans', color: 'antiquewhite' }}>Contact Information:</li>
-          <li style={{ fontFamily: 'Lucida Handwriting', color: 'antiquewhite' }}>Jesse Anderson</li>
-          <li style={{ fontFamily: 'Sans', color: 'antiquewhite' }}>(254)423-5822</li>
+          <li style={{ fontSize: '18px', fontFamily: 'Sans', color: 'rgb(28, 28, 49)' }}>Contact Information:</li>
+          <li style={{ fontFamily: 'Lucida Handwriting', color: 'rgb(28, 28, 49)' }}>Jesse Anderson</li>
+          <li style={{ fontFamily: 'Sans', color: 'rgb(28, 28, 49)' }}>(254)423-5822</li>
           <li>
-            <a href="mailto:LmntryLmnt@gmail.com" style={{ color: 'antiquewhite', textDecoration: 'none' }}>
+            <a href="mailto:LmntryLmnt@gmail.com" style={{ color: 'rgb(28, 28, 49)', textDecoration: 'none' }}>
               <FontAwesomeIcon icon={faGoogle} size="1x" className="me-2" />LmntryLmnt@gmail.com
             </a>
           </li>
           <li>
-            <a href="https://github.com/Vtencouchclimbr" target="_blank" rel="noopener noreferrer" style={{ color: 'antiquewhite', textDecoration: 'none' }}>
+            <a href="https://github.com/Vtencouchclimbr" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(28, 28, 49)', textDecoration: 'none' }}>
               <FontAwesomeIcon icon={faGithub} size="1x" className="me-2" />Vtencouchclimbr
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/jesse-anderson-991108297/" target="_blank" rel="noopener noreferrer" style={{ color: 'antiquewhite', textDecoration: 'none' }}>
+            <a href="https://www.linkedin.com/in/jesse-anderson-991108297/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(28, 28, 49)', textDecoration: 'none' }}>
               <FontAwesomeIcon icon={faLinkedin} size="1x" className="me-2" />jesse-anderson-991108297
             </a>
           </li>
         </ul>
+      </div>
       </div>
     </div>
   );
 }
 
 export default Form;
-export const animationMessage = "Thank you for visiting! Please enter your contact information below.↓";
+

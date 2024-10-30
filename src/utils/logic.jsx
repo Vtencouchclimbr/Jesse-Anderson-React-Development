@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { animationMessage } from '../pages/Contact';
+
+const  animationMessage  = "Thank you for visiting! Please enter your contact information below.↓";
 
 export default function TextAnimation() {
   const containerRef = useRef(null);
@@ -32,8 +33,8 @@ export default function TextAnimation() {
   }, [fullText]);
 
   return (
-    <div style={{ color: 'antiquewhite', fontFamily: 'Brush Script MT' }} ref={containerRef}>
-      <h1 style={{ fontSize: '30px' }}>{text}</h1>
+    <div ref={containerRef}>
+      <h1 style={{ fontSize: '30px', color: 'rgb(28, 28, 49)' }}>{text}</h1>
     </div>
   );
 }
