@@ -41,7 +41,7 @@
 
 
 /* Glow button CSS, currently available on full-screen only */
-.glow-on-hover {
+.glow {
     min-width: 40px;
     width: 170px;
     height: 50px;
@@ -55,7 +55,7 @@
     border-radius: 10px;
 }
 
-.glow-on-hover:before {
+.glow:before {
     content: '';
     background: linear-gradient(45deg, #111, #fff, #bac295, #e7a109, #1859bb);
     position: absolute;
@@ -72,19 +72,19 @@
     border-radius: 10px;
 }
 
-.glow-on-hover:active {
+.glow:active {
     color: #000
 }
 
-.glow-on-hover:active:after {
+.glow:active:after {
     background: transparent;
 }
 
-.glow-on-hover:hover:before {
+.glow:hover:before {
     opacity: 1;
 }
 
-.glow-on-hover:after {
+.glow:after {
     z-index: -1;
     content: '';
     position: absolute;

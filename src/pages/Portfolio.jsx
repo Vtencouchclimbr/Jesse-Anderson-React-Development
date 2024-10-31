@@ -17,12 +17,12 @@ export default function Portfolio() {
         <div className="btns"> 
           <div>
           <Link to="/projects">
-            <button className="glow-on-hover eachbtn" type="button">View Projects</button>
+            <button className="glow eachbtn" type="button">View Projects</button>
           </Link>
           </div>
           <div>
           <Link to="/code">
-            <button className="glow-on-hover eachbtn" type="button">View Code</button>
+            <button className="glow eachbtn" type="button">View Code</button>
           </Link>
           </div>
         </div>   
