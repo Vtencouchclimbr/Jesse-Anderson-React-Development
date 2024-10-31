@@ -57,7 +57,7 @@ function Form() {
       </div>
 
       {/* Form section */}
-      <form className="form-text row g-3 justify-content-center" onSubmit={emailValidate}>
+      <form className="form-text row g-3 justify-content-center m-2" onSubmit={emailValidate}>
         {/* First Name */}
         <div className="col-md-4 col-lg-3">
           <input
@@ -118,21 +118,21 @@ function Form() {
       {/* Contact Information */}
       <div className="contact-info d-flex mt-4 justify-content-center">
         <ul className="list-unstyled">
-          <li style={{ fontSize: '18px', fontFamily: 'Sans', color: 'rgb(28, 28, 49)' }}>Contact Information:</li>
-          <li style={{ fontFamily: 'Lucida Handwriting', color: 'rgb(28, 28, 49)' }}>Jesse Anderson</li>
-          <li style={{ fontFamily: 'Sans', color: 'rgb(28, 28, 49)' }}>(254)423-5822</li>
+          <li style={{ fontSize: '18px', fontFamily: 'Sans', color: 'rgb(14, 88, 18)' }}>Contact Information:</li>
+          <li style={{ fontFamily: 'Lucida Handwriting', color: 'rgb(14, 88, 18)' }}>Jesse Anderson</li>
+          <li style={{ fontFamily: 'Sans', color: 'rgb(14, 88, 18)' }}>(254)423-5822</li>
           <li>
-            <a href="mailto:LmntryLmnt@gmail.com" style={{ color: 'rgb(28, 28, 49)', textDecoration: 'none' }}>
+            <a href="mailto:LmntryLmnt@gmail.com" style={{ color: 'rgb(14, 88, 18)', textDecoration: 'none' }}>
               <FontAwesomeIcon icon={faGoogle} size="1x" className="me-2" />LmntryLmnt@gmail.com
             </a>
           </li>
           <li>
-            <a href="https://github.com/Vtencouchclimbr" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(28, 28, 49)', textDecoration: 'none' }}>
+            <a href="https://github.com/Vtencouchclimbr" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(14, 88, 18)', textDecoration: 'none' }}>
               <FontAwesomeIcon icon={faGithub} size="1x" className="me-2" />Vtencouchclimbr
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/jesse-anderson-991108297/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(28, 28, 49)', textDecoration: 'none' }}>
+            <a href="https://www.linkedin.com/in/jesse-anderson-991108297/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(14, 88, 18)', textDecoration: 'none' }}>
               <FontAwesomeIcon icon={faLinkedin} size="1x" className="me-2" />jesse-anderson-991108297
             </a>
           </li>

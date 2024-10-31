@@ -1,26 +1,27 @@
 import Footer from '../components/Footer';
+import BarNav from '../components/BarNav';
 import Dark4 from '../utils/backgrounds/Dark2.jpg';
 
-
 import './Code.css';
-
 
 export default function Code() {
   return (
     
-      <div className="projectContainer d-flex align-items-center min-vh-100"
+      <div className="projectContainer d-flex flex-column align-items-center min-vh-100"
       style={{
         minHeight: '100vh',
         backgroundImage: `url(${Dark4})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        border: '1px solid white',
       }}
       >
-          <div className="container">
-            <div className="row justify-content-center ">
-              <div className="col-12 col-sm-8 col-md-6 col-lg-4 mb-4 d-flex glow-on-hover">
+        <div className='barnav'>
+        <BarNav />
+        </div>
+          <div className="code container my-3">
+            <div className="row justify-content-center">
+              <div className="code1 col-12 col-sm-8 col-md-6 col-lg-4 mb-4 d-flex glow-on-hover">
                 <div className="card-body infoCard">
                   <h5 className="card-title cardName">Code Examples</h5>
                   <hr />
@@ -150,9 +151,9 @@ console.log('Sum', sum);
           </div>
 
 
-          <div className="container">
+          <div className="container my-3">
             <div className="row justify-content-center">
-              <div className="col-12 col-sm-8 col-md-6 col-lg-4 mb-4 d-flex glow-on-hover">
+              <div className="code1 col-12 col-sm-8 col-md-6 col-lg-4 mb-4 d-flex glow-on-hover">
                 <div className="card-body infoCard">
                   <h5 className="card-title cardName">Code Examples</h5>
                   <hr />
@@ -282,7 +283,7 @@ console.log(str.substring(1, 3));
           </div>
 
 
-        <div className="footer col-12 col-md-6 col-lg-4">
+        <div className="footer col-12">
         <Footer />
         </div>
       </div>
