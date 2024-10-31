@@ -1,4 +1,5 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 import './Portfolio.css';
 import code from '../utils/backgrounds/code.jpg';
 
@@ -16,26 +17,21 @@ export default function Portfolio() {
     }}>
       <div className="information d-flex flex-column justify-content-center align-items-center flex-lg-row flex-grow-1">
         <div className="btns"> 
-          <div>
+          <h2>Here are some of the projects I've been working on recently,</h2>
+          <h2>along with some code I have been catalogging while problem solving</h2>
+          <div className='d-flex flex-column justify-content-center align-items-center mt-5'>
+            <h2>View Projects</h2>
           <Link to="/projects">
             <button className="glow eachbtn" type="button">View Projects</button>
           </Link>
           </div>
-          <div>
+          <div className='d-flex flex-column justify-content-center align-items-center mt-5'>
+          <h2>View Code</h2>
           <Link to="/code">
             <button className="glow eachbtn" type="button">View Code</button>
           </Link>
           </div>
         </div>   
-        <div className="projects">
-          <ul className="list-group">
-          <li className="list-group-item"><a href="https://github.com/Vtencouchclimbr/Tech-Shopper-Pro">Tech Shopper Pro</a></li>
-          <li className="list-group-item"><a href="https://github.com/TEMPTAG/Yes-Chef">Yes, Chef!</a></li>
-          <li className="list-group-item"><a href="https://github.com/Vtencouchclimbr/Module-14-Challenge_Kanban-Board">Kanban Board</a></li>
-          <li className="list-group-item"><a href="https://github.com/Vtencouchclimbr/Book-Search-Engine">Book Search Engine</a></li>
-          <li className="list-group-item"><a href="https://github.com/Vtencouchclimbr/Test-Suite">Testing Suite</a></li>
-          </ul>
-        </div>
       </div>
     </div>
   );

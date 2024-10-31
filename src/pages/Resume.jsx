@@ -1,6 +1,4 @@
-// import Icon1 from '../utils/mongodb.png';
 import crazy1 from '../utils/backgrounds/crazy1.jpg';
-
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -28,12 +26,12 @@ export default function Resume() {
       backgroundRepeat: 'no-repeat',
     }}>
       <div className="d-flex flex-column align-items-center text-center py-5">
-        <h1 className="display-4" style={{ fontFamily: 'Brush Script MT', color: 'antiquewhite' }}>
+        <h1 className="title display-4" style={{ fontFamily: 'Brush Script MT', color: 'antiquewhite' }}>
           Download my resume to explore my qualifications and experience
         </h1>
 
-        <a href={resume} download="MyDocument.pdf" style={{ color: 'antiquewhite' }} className="my-4">
-          <button style={{ color: 'antiquewhite' }} className="btn btn-outline-light btn-lg shadow">
+        <a href={resume} download="JesseAndersonResume.pdf" style={{ color: 'antiquewhite' }} className="btn-x">
+          <button style={{ color: 'antiquewhite', visibility: 'hidden' }} className="btn btn-lg">
             Download PDF
           </button>
         </a>
