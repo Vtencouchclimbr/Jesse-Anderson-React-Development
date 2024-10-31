@@ -34,7 +34,7 @@ export default function TextAnimation() {
 
   return (
     <div ref={containerRef}>
-      <h1 style={{ fontSize: '30px', color: 'rgb(28, 28, 49)' }}>{text}</h1>
+      <h1 style={{ fontSize: '30px', color: 'rgb(19, 117, 24)' }}>{text}</h1>
     </div>
   );
 }
