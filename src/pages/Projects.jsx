@@ -2,8 +2,12 @@ import BarNav from '../components/BarNav';
 import Footer from '../components/Footer';
 
 
-import code1 from '../utils/projectThumbnails/code1.jpg';
-import code2 from '../utils/projectThumbnails/code2.jpg';
+import tspPic from '../utils/projectThumbnails/tspPic.png';
+import yesChef from '../utils/projectThumbnails/yesChef.png';
+import kanBan from '../utils/projectThumbnails/kanBan.png';
+import bookSearch from '../utils/projectThumbnails/bookSearch.png';
+import testSuite from '../utils/projectThumbnails/testSuite.png';
+
 import Dark4 from '../utils/backgrounds/humanoid.jpg';
 
 
@@ -33,38 +37,38 @@ export default function Projects() {
         </div>
         <div className="imgbox">
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
-            <img src={code1} className="img img-fluid" alt="Project 1" />
+            <img src={tspPic} className="img img-fluid" alt="Project 1" />
             <div>
             <h2>Tech Shopper Pro</h2>
-            <p>you and me and project 1</p>
+            <p>Tech Shopper Pro is a full-stack e-commerce application that allows users to browse products, add items to a shopping cart, and proceed to checkout. It also includes a wishlist feature accessible through an off-canvas layout. Users can register and log in using JWT-based authentication, ensuring secure sessions and smooth interactions.</p>
             </div>
           </div>
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
-            <img src={code2} className="img img-fluid" alt="Project 2" />
+            <img src={yesChef} className="img img-fluid" alt="Project 2" />
             <div>
             <h2>Yes, Chef!</h2>
-            <p>you and me and project 1</p>
+            <p>Yes, Chef! Is a single application helps you select a recipe, generate a shopping list, and guide you through the cooking process.</p>
             </div>
           </div>
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
-            <img src={code2} className="img img-fluid" alt="Project 3" />
+            <img src={kanBan} className="img img-fluid" alt="Project 3" />
             <div>
             <h2>Kanban Board</h2>
-            <p>you and me and project 1</p>
+            <p>This is a Kanban board application that integrates JWT (JSON Web Token) authentication for user login and session management. The board allows users to create, update, and manage tasks across different columns (e.g., "To Do," "In Progress," "Done"). JWTs are used to authenticate users, ensuring that only authorized individuals can interact with the board. The authentication system helps protect sensitive routes and data, providing a secure environment for task management. This project demonstrates a combination of front-end task organization and secure back-end authentication using JWTs.</p>
             </div>
           </div>
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
-            <img src={code2} className="img img-fluid" alt="Project 4" />
+            <img src={bookSearch} className="img img-fluid" alt="Project 4" />
             <div>
             <h2>Book Search Engine</h2>
-            <p>you and me and project 1</p>
+            <p>The Book Search Engine is a sophisticated web application that enables users to search for books using the Google Books API, providing access to an extensive catalog of titles and information. Designed with a responsive and intuitive interface, this search engine integrates Apollo and GraphQL on the backend, ensuring efficient data retrieval and seamless querying capabilities. Users can explore, save, and manage book listings dynamically, enjoying a smooth experience backed by modern API technology and a robust, scalable GraphQL architecture. This application combines the power of Google’s vast library with a performant backend, offering an optimized and engaging book discovery experience.</p>
             </div>
           </div>
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
-            <img src={code2} className="img img-fluid" alt="Project 5" />
+            <img src={testSuite} className="img img-fluid" alt="Project 5" />
             <div>
             <h2>Testing Suite</h2>
-            <p>you and me and project 1</p>
+            <p>A testing suite application built with the MERN stack (MongoDB, Express.js, React, Node.js) leverages Cypress for end-to-end testing, ensuring smooth user interactions and robust performance. This application allows developers to write and execute tests within an intuitive interface, simulating real user scenarios across different browser environments. Cypress’s powerful testing capabilities, paired with the scalability of MERN, provide an efficient, integrated solution to validate front-end behavior, backend API responses, and database functionality, ultimately enhancing code quality and reliability in production.</p>
             </div>
           </div>
         </div>
