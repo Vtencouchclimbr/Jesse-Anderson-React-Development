@@ -1,3 +1,9 @@
+.barnav {
+  width: 100%;
+  justify-content: center; 
+  align-items: center;
+}
+
 .img {
   width: 250px;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
@@ -6,6 +12,10 @@
 p, h2 {
   color: antiquewhite;
 }
+
+.imgbox {
+    margin-bottom: 60px;
+  }
 
 .imgboxitem {
     display: flex;
@@ -21,12 +31,13 @@ p, h2 {
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: center;
-      
+      margin-bottom: 100px;
     }
   }
 
 @media (min-width: 1200px) {
     .footer {
       width: 100%;
+      padding-top: 50px;
     }
   }

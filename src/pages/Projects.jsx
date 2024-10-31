@@ -1,4 +1,6 @@
+import BarNav from '../components/BarNav';
 import Footer from '../components/Footer';
+
 
 import code1 from '../utils/projectThumbnails/code1.jpg';
 import code2 from '../utils/projectThumbnails/code2.jpg';
@@ -11,7 +13,7 @@ import './Projects.css';
 export default function Projects() {
   return (
     
-      <div className="projectContainer d-flex flex-column align-items-center"
+      <div className="d-flex flex-column align-items-center"
       style={{
         minHeight: '100vh',
         backgroundImage: `url(${Dark4})`,
@@ -20,6 +22,9 @@ export default function Projects() {
         backgroundRepeat: 'no-repeat',
       }}
       >
+        <div className='barnav'>
+        <BarNav />
+        </div>
         <div className="col-12 col-md-6 col-lg-4 mb-4 mt-4 d-flex flex-column align-items-center">
           <h1>Projects</h1>
           <p className="text-center">
