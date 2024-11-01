@@ -61,9 +61,8 @@
   .btn-x:hover::before {
     transform: rotate(-45deg);
     background-color: rgba(255,255,255,0);
-    color: rgb(184, 137, 38);
     font-size: 25px;
-    content: 'Thanks!';
+    content: '❤️️';
   }
   .btn-x:hover::after {
     transform: rotate(45deg);

@@ -13,6 +13,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faBook, faCode, faCodeBranch, faDatabase, faGhost, faServer } from '@fortawesome/free-solid-svg-icons';
 import resume from '../utils/Resume.pdf';
+// import CoverLetter from '../utils/CoverLetter.pdf';
 import './Resume.css';
 
 export default function Resume() {
