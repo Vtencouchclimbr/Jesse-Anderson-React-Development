@@ -1,5 +1,5 @@
 .portDesc {
-    color: rgb(244, 245, 252);
+    color: rgb(211, 202, 173);
 }
 
 .btns {
@@ -54,7 +54,7 @@
     height: 50px;
     border: none;
     outline: none;
-    color: #fff;
+    color: rgb(211, 202, 173);
     background: #111;
     cursor: pointer;
     position: relative;
@@ -64,7 +64,7 @@
 
 .glow:before {
     content: '';
-    background: linear-gradient(45deg, #111, #ece7e7, #bac295);
+    background: linear-gradient(45deg, #111, #ece7e7, rgb(211, 202, 173));
     position: absolute;
     top: -2px;
     left:-2px;
