@@ -3,7 +3,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Portfolio.css';
 import code from '../utils/backgrounds/code.jpg';
 
-
 import { Link } from 'react-router-dom';
 
 export default function Portfolio() {
@@ -24,13 +23,13 @@ export default function Portfolio() {
           <div className='d-flex flex-column justify-content-center align-items-center mt-5'>
             <h2 className="portDesc">View Projects</h2>
           <Link to="/projects">
-            <button className="glow eachbtn" type="button">View Projects</button>
+            <button className="portDesc glow eachbtn" type="button">View Projects</button>
           </Link>
           </div>
           <div className='d-flex flex-column justify-content-center align-items-center mt-5'>
           <h2 className="portDesc">View Code</h2>
           <Link to="/code">
-            <button className="glow eachbtn" type="button">View Code</button>
+            <button className="portDesc glow eachbtn" type="button">View Code</button>
           </Link>
           </div>
         </div>   
