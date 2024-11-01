@@ -1,7 +1,7 @@
 
   @media (min-width: 1200px) {
     .title {
-      margin-top: 100px;
+      margin-top: 200px;
       margin-bottom: 100px;
     }
   }
@@ -12,11 +12,8 @@
     }
   } 
 
-
-
-
   .btn-x {
-    color: #FFF;
+    color: antiquewhite;
     transition: all 0.5s;
     position: relative; 
     margin: 20px 0px 20px 0px;

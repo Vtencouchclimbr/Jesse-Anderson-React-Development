@@ -15,27 +15,11 @@ export default function Home() {
         }}
         >
       {/* Left Section with Text */}
-      <div className="flex-grow-1 d-flex flex-column p-3">
-        <h1
-          style={{
-            color: 'antiquewhite',
-            fontSize: '35px',
-            marginTop: '40px',
-            marginLeft: '40px',
-            fontFamily: 'Arial',
-          }}
-        >
+      <div className="flex-grow-1 d-flex flex-column">
+        <h2 className='welcome mt-5'>
           Welcome to my portfolio
-        </h1>
-        <div
-          style={{
-            color: 'antiquewhite',
-            marginLeft: '100px',
-            backgroundColor: 'rgb(63, 61, 78)',
-            boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)',
-          }} 
-          className=" card d-flex flex-column align-items-end"
-        >
+        </h2>
+        <div className="aboutCard card d-flex flex-column align-items-center">
           <div style={{ backgroundColor: 'rgb(63, 61, 78)', color: 'antiquewhite' }} className="card-body">
             <p className="card-text">
               A dedicated and versatile professional from Maryland, I bring a unique blend of technical and creative interests to <br /> 
@@ -46,7 +30,10 @@ export default function Home() {
               critical to modern software development. My technical expertise spans HTML, CSS, JavaScript, TypeScript, Node.js, Express, SQL, <br /> 
               PostgreSQL, React, the PERN and MERN stacks, NoSQL databases, MongoDB, and Mongoose. Additionally, I’m proficient with <br /> 
               JSON Web Tokens (JWTs), Apollo, Vitest, Cypress, and Python, along with tools like CircleCI, Insomnia, Render, Netlify, <br /> 
-              GitHub Actions, GitHub, and pseudocode. I bring strong problem-solving abilities and a solid foundation in AI and document research. My five-year plan includes advancing to a senior developer role, becoming a team manager, and collaborating on personal projects with fellow developers. Throughout, I remain committed to continuous learning, growth, and contributing to high-impact projects within dynamic teams
+              GitHub Actions, GitHub, and pseudocode. I bring strong problem-solving abilities and a solid foundation in AI and document <br />
+              research. My five-year plan includes advancing to a senior developer role, becoming a team manager, and collaborating on <br />
+              personal projects with fellow developers. Throughout, I remain committed to continuous learning, growth, and contributing to <br />
+              high-impact projects within dynamic teams
             </p>
           </div>
         </div>
@@ -57,11 +44,11 @@ export default function Home() {
         <h1 className="signature">
           Jesse Anderson
         </h1>
-        <h2 style={{ color: 'antiquewhite'}} className="titleText">
+        <h2 style={{ color: 'antiquewhite' }} className="titleText">
         Full Stack Developer && Software Engineer
         </h2>
         <img
-          className="img-fluid"
+          className="img-fluid myPic"
           style={{ borderRadius: '5%', width: '100%'}}
           src={myImage}
           alt="Image of the developer"
