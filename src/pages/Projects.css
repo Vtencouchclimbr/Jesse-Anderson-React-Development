@@ -9,8 +9,8 @@
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
-p, h2 {
-  color: antiquewhite;
+.desc, .projName {
+  color: rgb(244, 245, 252);
 }
 
 .imgbox {

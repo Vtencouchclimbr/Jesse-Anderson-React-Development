@@ -1,7 +1,10 @@
-h1 {
-  color: antiquewhite;
-  font-family: Lucida Handwriting;
-  z-index: 1;
+
+@media (min-width: 1200px) {
+  .welcome {
+    margin-left: 100px;
+    margin-top: 100px;
+    color: antiquewhite;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -39,13 +42,35 @@ h1 {
     position: absolute;
     right: 230px;
     bottom: 275px;
+    color: antiquewhite;
+    font-family: Lucida Handwriting;
+    z-index: 1;
   }
 }
+
 @media (min-width: 1200px) {
   .card-body {
-    background-color: #f8f9fa;
+    background-color: #faf9f8;
     border-radius: 10px;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
     position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .myPic {
+    max-width: 345px;
+  }
+}
+
+.aboutCard {
+  color: antiquewhite;
+  background-color: rgb(63, 61, 78);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1200px) {
+  .aboutCard {
+    margin-left: 275px;
   }
 }

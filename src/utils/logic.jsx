@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-const  animationMessage  = "Thank you for visiting! Leave a message if you'd like to get in contact :)";
+const  animationMessage  = "Thank you for visiting! Leave a message and i'll get right back to you :)";
 
 export default function TextAnimation() {
   const containerRef = useRef(null);

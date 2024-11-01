@@ -27,7 +27,7 @@ export default function Resume() {
       backgroundRepeat: 'no-repeat',
     }}>
       <div className="d-flex flex-column align-items-center text-center py-5">
-        <h1 className="title display-4" style={{ fontFamily: 'Brush Script MT', color: 'antiquewhite' }}>
+        <h1 className="title display-4" style={{ fontFamily: 'Arial', color: 'antiquewhite', fontSize: '40px' }}>
           Download my resume to explore my qualifications and experience
         </h1>
 
