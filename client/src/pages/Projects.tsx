@@ -34,6 +34,9 @@ export default function Projects() {
           <p className="text-center desc">
             Here are some of the projects I have worked on. Click on the thumbnail to view the GitHub repo.
           </p>
+          <p style={{color:'red'}} className="text-center desc">
+            Links to GitHub Repos coming soon!
+          </p>
         </div>
         <div className="imgbox">
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
@@ -47,7 +50,7 @@ export default function Projects() {
             <img src={yesChef} className="img img-fluid" alt="Project 2" />
             <div>
             <h2 className="projName">Yes, Chef!</h2>
-            <p className="desc">Yes, Chef! Is a single application helps you select a recipe, generate a shopping list, and guide you through the cooking process.</p>
+            <p className="desc">Yes, Chef! Is a single application helps you select a recipe, generate a shopping list, and guide you through the cooking process. This application was built using HTML, CSS, and Javascript.</p>
             </div>
           </div>
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
