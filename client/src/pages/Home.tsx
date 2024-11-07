@@ -17,7 +17,7 @@ export default function Home() {
         >
       {/* Left Section with Text */}
       <div className='logContainer d-flex flec-column'>
-        <div className="cardTitle flex-grow-1 d-flex flex-column m-2">
+        <div className="cardTitle d-flex flex-column m-2">
           <h2 className='welcome mt-5'>
             Welcome to my portfolio
           </h2>
