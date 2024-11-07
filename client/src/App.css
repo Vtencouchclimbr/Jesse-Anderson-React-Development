@@ -1,0 +1,38 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+}
+
+/* Media Queries for Large Screens */
+@media (min-width: 1600px) {
+  main {
+    padding: 3rem;
+  }
+}

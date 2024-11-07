@@ -1,0 +1,35 @@
+
+.contactTitle {
+       font-size: 50px;
+       font-family: arial;
+}
+
+@media (min-width: 1200px) {
+    .msgform {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      
+    }
+  } 
+
+  @media (min-width: 1200px) {
+    .screen {
+      width: 100%;
+    }
+  }
+
+@media (min-width: 1200px) {
+    .contact-info {
+      color: rgb(28, 28, 49);
+      margin-bottom: 50px;
+    }
+  } 
+
+  @media (min-width: 1200px) {
+    .dynamic-text {
+      height: 300px;
+      margin-bottom: 200px;
+    }
+  }
