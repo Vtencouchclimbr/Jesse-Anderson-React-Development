@@ -1,5 +1,5 @@
-import BarNav from '../components/BarNav';
-import Footer from '../components/Footer';
+import BarNav from '../components/BarNav.tsx';
+import Footer from '../components/Footer.tsx';
 
 
 import tspPic from '../utils/projectThumbnails/tspPic.png';

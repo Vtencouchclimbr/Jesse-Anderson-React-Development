@@ -1,48 +1,55 @@
-import { useState } from 'react';
+import { useState, type FormEvent, type ChangeEvent } from 'react';
+import { Link } from 'react-router-dom';
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../utils/mutations';
+
+import Auth from '../utils/auth';
+
 import TextAnimation from '../utils/logic';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css';
 import forest1 from '../utils/backgrounds/forest1.jpg';
 
-function Form() {
-  const [formInfo, setformInfo] = useState({
-    firstName: "",
-    lastName: "",
+function Contact() {
+  const [formState, setFormState] = useState({
+    firstname: "",
     email: "",
-    message: ""
+    password: ""
   });
+  const [addUser, { error, data }] = useMutation(ADD_USER);
+   
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
 
-  const handleInput = e => {
-    setformInfo({ ...formInfo, [e.target.name]: e.target.value });
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
   };
+  const handleFormSubmit = async (event: FormEvent) => {
+    event.preventDefault();
 
-  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-  const emailValidate = (e) => {
-    e.preventDefault();
-    const { email } = formInfo;
-    if (!email.trim()) {
-      alert('Please enter your email before submitting.');
-    } else if (!validateEmail(email)) {
-      alert('Please enter a valid email address.');
-    } else {
-      handleFormSubmit(e);
+    try {
+      const { data } = await addUser({
+        variables: { input: { ...formState } },
+      });
+      console.log(data);
+      Auth.login(data.addUser.token);
+    } catch (e) {
+      console.error(e);
     }
   };
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    setformInfo({
-      firstName: "",
-      lastName: "",
-      email: "",
-      message: ""
-    });
-    alert('Form submitted successfully!');
-  };
-
   return (
+    <div className="screen">
+          <div className="">
+            {data ? (
+              <p>
+                Success! You may now head{' '}
+                <Link to="/">back to the homepage.</Link>
+              </p>
+            ) : (
     <div className="d-flex flex-column justify-content-center flex-lg-row flex-grow-1" style={{
       minHeight: '100vh',
       backgroundImage: `url(${forest1})`,
@@ -51,54 +58,43 @@ function Form() {
       backgroundRepeat: 'no-repeat',
     }}>
       <div className="msgform">
+      <div style={{color: 'rgb(245, 245, 250)'}} className='d-flex justify-content-center'><h2 className='contactTitle'>Restiger here!</h2></div>
+
       {/* Form section */}
-      <form className="form-text row g-3 justify-content-center m-2" onSubmit={emailValidate}>
+      <form className="form-text row g-3 justify-content-center m-2" onSubmit={handleFormSubmit}>
         {/* First Name */}
         <div className="col-md-4 col-lg-3">
           <input
-            value={formInfo.firstName}
-            name="firstName"
-            onChange={handleInput}
+            value={formState.firstname}
+            name="firstname"
+            onChange={handleChange}
             className="form-control shadow"
             type="text"
             placeholder="First Name"
           />
         </div>
 
-        {/* Last Name */}
-        <div className="col-md-4 col-lg-3">
-          <input
-            value={formInfo.lastName}
-            name="lastName"
-            onChange={handleInput}
-            className="form-control shadow"
-            type="text"
-            placeholder="Last Name"
-          />
-        </div>
-
         {/* Email */}
         <div className="col-md-8 col-lg-6">
           <input
-            value={formInfo.email}
+            value={formState.email}
             name="email"
-            onChange={handleInput}
+            onChange={handleChange}
             className="form-control shadow"
             type="email"
             placeholder="Youremail@address.com"
           />
         </div>
 
-        {/* Message */}
-        <div className="col-12">
-          <textarea
-            id="message"
-            name="message"
-            value={formInfo.message}
-            onChange={handleInput}
+        {/* Password */}
+        <div className="col-md-8 col-lg-6">
+          <input
+            value={formState.password}
+            name="password"
+            onChange={handleChange}
             className="form-control shadow"
-            placeholder="Tell me what you think. Tell me what you liked. Tell me what you would like to see. Tell me anything... "
-            rows="4"
+            type="password"
+            placeholder="********"
           />
         </div>
 
@@ -134,13 +130,22 @@ function Form() {
         </ul>
       </div>
       {/* Text animation */}
-      <div className="dynamic-text">
+      <div style={{height:'150px'}} className="dynamic-text d-flex justify-content-center">
         <TextAnimation />
       </div>
       </div>
     </div>
+    
+  )}
+  {error && (
+              <div className="my-3 p-3 bg-danger text-white">
+                {error.message}
+              </div>
+            )}
+  </div>
+  </div>
   );
 }
 
-export default Form;
+export default Contact;
 

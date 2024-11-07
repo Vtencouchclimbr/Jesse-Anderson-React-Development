@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-const  animationMessage  = "Thank you for visiting! Leave a message and i'll get right back to you :)";
+const  animationMessage  = "Sign up here and leave me feedback!";
 
 export default function TextAnimation() {
   const containerRef = useRef(null);
@@ -33,7 +33,7 @@ export default function TextAnimation() {
   }, [fullText]);
 
   return (
-    <div ref={containerRef}>
+    <div style={{ width:'300px' }} ref={containerRef}>
       <h2 style={{ fontSize: '30px', color: 'rgb(245, 245, 250)', justifyContent: 'center', textAlign: 'center' }}>{text}</h2>
     </div>
   );

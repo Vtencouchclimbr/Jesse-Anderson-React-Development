@@ -1,9 +1,12 @@
 
+
+.welcome {
+  color: antiquewhite;
+}
+
 @media (min-width: 1200px) {
   .welcome {
-    margin-left: 100px;
-    margin-top: 100px;
-    color: antiquewhite;
+    align-items: start;
   }
 }
 
@@ -14,6 +17,12 @@
     position: absolute;
     right: 400px;
     bottom: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardTitle {
+    align-items: center;
   }
 }
 
@@ -36,13 +45,16 @@
   }
 }
 
+.signature {
+  color: antiquewhite;
+}
+
 @media (min-width: 1200px) {
   .signature {
     font-size: 60px;
     position: absolute;
     right: 230px;
     bottom: 275px;
-    color: antiquewhite;
     font-family: Lucida Handwriting;
     z-index: 1;
   }
@@ -71,6 +83,21 @@
 
 @media (min-width: 1200px) {
   .aboutCard {
-    margin-left: 275px;
+    width: 950px;
   }
 }
+
+@media (min-width: 1200px) {
+  .logOption {
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logContainer {
+    width: 100%;
+  }
+}
+

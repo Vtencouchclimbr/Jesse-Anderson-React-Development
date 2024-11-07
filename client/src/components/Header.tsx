@@ -1,5 +1,5 @@
 
-import NavTabs from './NavTabs';
+import NavTabs from './NavTabs.tsx';
 
 function Header() {
 
