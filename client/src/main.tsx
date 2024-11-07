@@ -6,9 +6,11 @@ import App from './App';
 import Error from './pages/Error';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
-import Resume from './pages/Resume.jsx';
-import Projects from './pages/Projects.jsx';
-import Code from './pages/Code.jsx';
+import Resume from './pages/Resume';
+import Projects from './pages/Projects';
+import Code from './pages/Code';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: 'Code',
         element: <Code />,
+      },
+      {
+        path: 'Signup',
+        element: <Signup />,
+      },
+      {
+        path: 'Login',
+        element: <Login />,
       },
 ]);
 

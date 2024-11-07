@@ -1,4 +1,9 @@
 
+.contactTitle {
+       font-size: 50px;
+       font-family: arial;
+}
+
 @media (min-width: 1200px) {
     .msgform {
       display: flex;
@@ -10,20 +15,21 @@
   } 
 
   @media (min-width: 1200px) {
-    .form-text {
-      
+    .screen {
+      width: 100%;
     }
   }
 
 @media (min-width: 1200px) {
     .contact-info {
       color: rgb(28, 28, 49);
-      
+      margin-bottom: 50px;
     }
   } 
 
   @media (min-width: 1200px) {
     .dynamic-text {
-      margin: 100px;
+      height: 300px;
+      margin-bottom: 200px;
     }
   }

@@ -1,5 +1,5 @@
-import Footer from '../components/Footer';
-import BarNav from '../components/BarNav';
+import Footer from '../components/Footer.tsx';
+import BarNav from '../components/BarNav.tsx';
 import Dark4 from '../utils/backgrounds/Dark2.jpg';
 
 import './Code.css';
