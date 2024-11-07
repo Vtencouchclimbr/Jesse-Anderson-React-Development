@@ -58,7 +58,7 @@ function Contact() {
       backgroundRepeat: 'no-repeat',
     }}>
       <div className="msgform">
-      <div style={{color: 'rgb(245, 245, 250)'}} className='d-flex justify-content-center'><h2 className='contactTitle'>Restiger here!</h2></div>
+      <div style={{color: 'rgb(245, 245, 250)'}} className='d-flex justify-content-center'><h2 className='contactTitle'>Register here!</h2></div>
 
       {/* Form section */}
       <form className="form-text row g-3 justify-content-center m-2" onSubmit={handleFormSubmit}>
