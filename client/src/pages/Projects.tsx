@@ -7,6 +7,7 @@ import yesChef from '../utils/projectThumbnails/yesChef.png';
 import kanBan from '../utils/projectThumbnails/kanBan.png';
 import bookSearch from '../utils/projectThumbnails/bookSearch.png';
 import testSuite from '../utils/projectThumbnails/testSuite.png';
+import socialNetwork from '../utils/projectThumbnails/socialNetwork.png';
 
 import Dark4 from '../utils/backgrounds/humanoid.jpg';
 
@@ -47,17 +48,17 @@ export default function Projects() {
             </div>
           </div>
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
-            <img src={yesChef} className="img img-fluid" alt="Project 2" />
+            <img src={socialNetwork} className="img img-fluid" alt="Project 2" />
             <div>
-            <h2 className="projName">Yes, Chef!</h2>
-            <p className="desc">Yes, Chef! Is a single application helps you select a recipe, generate a shopping list, and guide you through the cooking process. This application was built using HTML, CSS, and Javascript.</p>
+            <h2 className="projName">Social Network API</h2>
+            <p className="desc">A back-end social networking app built using MongoDB, Mongoose, and TypeScript provides a robust platform for managing user interactions, content, and connections. MongoDB's document-based NoSQL database allows for flexible storage of user profiles, posts, comments, and friendships, while Mongoose ensures schema-based data validation and structure. TypeScript enhances the app with static typing, improving type safety and reducing development errors. The app features RESTful APIs for user authentication, post creation, commenting, and managing connections or friend requests. Middleware handles input validation and error responses, ensuring reliability. Additionally, the app supports real-time features like notifications and live updates, leveraging WebSocket or similar technologies. The combination of MongoDB, Mongoose, and TypeScript results in a clean, scalable, and maintainable codebase.</p>
             </div>
           </div>
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
             <img src={kanBan} className="img img-fluid" alt="Project 3" />
             <div>
             <h2 className="projName">Kanban Board</h2>
-            <p className="desc">This is a Kanban board application that integrates JWT (JSON Web Token) authentication for user login and session management. The board allows users to create, update, and manage tasks across different columns (e.g., "To Do," "In Progress," "Done"). JWTs are used to authenticate users, ensuring that only authorized individuals can interact with the board. The authentication system helps protect sensitive routes and data, providing a secure environment for task management. This project demonstrates a combination of front-end task organization and secure back-end authentication using JWTs.</p>
+            <p className="desc">This is a Kanban board application that integrates JWT (JSON Web Token) authentication for user login and session management. The board uses PostgreSQL to allow users to create, update, and manage tasks across different columns (e.g., "To Do," "In Progress," "Done"). JWTs are used to authenticate users, ensuring that only authorized individuals can interact with the board. The authentication system helps protect sensitive routes and data, providing a secure environment for task management. This project demonstrates a combination of front-end task organization and secure back-end authentication using JWTs.</p>
             </div>
           </div>
           <div className="imgboxitem col-12 col-md-6 col-lg-4 mb-2">
