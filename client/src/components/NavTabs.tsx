@@ -14,11 +14,11 @@ function NavTabs() {
           Nav
         </button>
         <ul className="list dropdown-menu">
-          <li><a className="nav-link dropdown-item" href="#home">Home</a></li>
-          <li><a className="nav-link dropdown-item" href="#portfolio">Portfolio</a></li>
-          <li><a className="nav-link dropdown-item" href="#resume">Resume</a></li>
-          <li><a className="nav-link dropdown-item" href="#contact">Contact</a></li>
-        </ul>
+          <li className="nav-link"><a className="list-item dropdown-item" href="#home">Home</a></li>
+          <li className="nav-link"><a className="list-item dropdown-item" href="#portfolio">Portfolio</a></li>
+          <li className="nav-link"><a className="list-item dropdown-item" href="#resume">Resume</a></li>
+          <li className="nav-link"><a className="list-item dropdown-item" href="#contact">Contact</a></li>
+        </ul> 
       </div>
     </nav>
   );
