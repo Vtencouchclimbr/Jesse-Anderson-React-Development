@@ -1,35 +1,25 @@
-.navbar {
-    position: fixed;
-    margin-left: 5px;
-    top: 0px;
-    right: 0px;
-    background-color: transparent;
-    z-index: 1000;
-  }
-  
-  .custom-toggler {
-    padding: 5px;
-    border: none;
-    background: none;
-  }
-  
-  .custom-toggler .navbar-toggler-icon {
-    width: 20px;
-    height: 20px;
-  }
+.btn-group {
+  position: fixed;
+  background-color: transparent;
+}
 
-  
-  .navbar-collapse {
-    background-color: #111;
-    padding: 10px;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    border-radius: 4px;
-  }
-  
-  .nav-link {
-    color: #f4f4f4;
-    margin: 5px 0;
-  }
+.navTop {
+  background-color: #111;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  border-radius: 4px;
+}
+
+.nav-link {
+  background-color: #111;
+  color: #f4f4f4;
+  margin: 5px 0;
+}
+
+.list {
+  background-color: #111;
+
+}
   
