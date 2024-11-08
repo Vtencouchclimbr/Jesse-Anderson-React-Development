@@ -1,44 +1,27 @@
 import './NavTabs.css';
 
-
-import { useState } from 'react';
-
 function NavTabs() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <nav className="navbar fixed-top">
-      <button
-        className="navbar-toggler"
-        type="button"
-        onClick={toggleMenu}
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`}>
-        <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
-            <a className="nav-link" href="#home">Home</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#resume">Resume</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#contact">Contact</a>
-          </li>
+      <div className="btn-group">
+        <button 
+        className="navTop btn btn-secondary dropdown-toggle" 
+        type="button" 
+        data-bs-toggle="dropdown" 
+        data-bs-auto-close="true" 
+        aria-expanded="false">
+          Nav
+        </button>
+        <ul className="list dropdown-menu">
+          <li><a className="nav-link dropdown-item" href="#home">Home</a></li>
+          <li><a className="nav-link dropdown-item" href="#portfolio">Portfolio</a></li>
+          <li><a className="nav-link dropdown-item" href="#resume">Resume</a></li>
+          <li><a className="nav-link dropdown-item" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
   );
 };
-
   
-
 export default NavTabs;
