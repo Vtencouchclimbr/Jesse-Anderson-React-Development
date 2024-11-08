@@ -9,17 +9,21 @@
   position: absolute;
   top: 20px;
   left: 5px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .nav-link {
   background-color: #111;
   color: #f4f4f4;
-  margin: 5px 0;
+  margin: 5px 5px;
+}
+
+.list-item{
+  color: #f4f4f4;
 }
 
 .list {
   background-color: #111;
-
 }
+
   
