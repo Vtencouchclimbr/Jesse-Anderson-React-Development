@@ -15,7 +15,7 @@ export default function Portfolio() {
       backgroundRepeat: 'no-repeat',
     }}>
       <div className="information d-flex flex-column justify-content-center align-items-center flex-lg-row flex-grow-1">
-        <div className="btns"> 
+        <div className="btns1"> 
           <h2 className="portDesc">Here are some of the projects I've been working on recently,</h2>
           <h3 className="portDesc">along with some code I have been catalogging while problem solving</h3>
           <h3 className="portDesc">(Code better viewed on</h3>

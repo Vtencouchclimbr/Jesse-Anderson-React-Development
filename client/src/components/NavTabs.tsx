@@ -4,7 +4,7 @@ function NavTabs() {
 
   return (
     <nav className="navbar fixed-top">
-      <div className="btn-group">
+      <div className="btns">
         <button 
         className="navTop btn btn-secondary dropdown-toggle" 
         type="button" 
@@ -14,10 +14,10 @@ function NavTabs() {
           Nav
         </button>
         <ul className="list dropdown-menu">
-          <li className="nav-link"><a className="list-item dropdown-item" href="#home">Home</a></li>
-          <li className="nav-link"><a className="list-item dropdown-item" href="#portfolio">Portfolio</a></li>
-          <li className="nav-link"><a className="list-item dropdown-item" href="#resume">Resume</a></li>
-          <li className="nav-link"><a className="list-item dropdown-item" href="#contact">Contact</a></li>
+          <li className="titem"><a className="litem dropdown-item" href="#home">Home</a></li>
+          <li className="titem"><a className="litem dropdown-item" href="#portfolio">Portfolio</a></li>
+          <li className="titem"><a className="litem dropdown-item" href="#resume">Resume</a></li>
+          <li className="titem"><a className="litem dropdown-item" href="#contact">Contact</a></li>
         </ul> 
       </div>
     </nav>
