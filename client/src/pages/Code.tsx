@@ -1,6 +1,6 @@
 import Footer from '../components/Footer.tsx';
 import BarNav from '../components/BarNav.tsx';
-import coder2 from '../utils/backgrounds/space1.jpg';
+import space1 from '../utils/backgrounds/space1.jpg';
 
 import './Code.css';
 
@@ -10,7 +10,7 @@ export default function Code() {
       <div className="projectContainer d-flex flex-column align-items-center min-vh-100"
       style={{
         minHeight: '100vh',
-        backgroundImage: `url(${coder2})`,
+        backgroundImage: `url(${space1})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
