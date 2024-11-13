@@ -1,3 +1,4 @@
-import User from './User.js';
+import User from './User';
+import Comment from './Comment';
 
-export { User };
+export { User, Comment };

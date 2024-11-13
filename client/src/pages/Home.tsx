@@ -1,7 +1,7 @@
 import myImage from '../utils/me3.png';
 import './Home.css';
 import Dark4 from '../utils/backgrounds/Dark4.jpg';
-import Login from './Login';
+// import Login from './Login';
 // import Signup fro './Signup';
 
 export default function Home() {
@@ -57,10 +57,10 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className='logOption m-2'>
+      {/* <div className='logOption m-2'>
         <Login />
         <p style={{color:'antiquewhite'}}>Sign-in here or <br />Register on the contact page below</p>
-      </div>
+      </div> */}
     </div>
   );
 }
