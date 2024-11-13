@@ -19,9 +19,10 @@ export const ADD_USER = gql`
       user {
       firstname
       email
-      _id
+      comments
     }
     token
     }
   }
 `;
+

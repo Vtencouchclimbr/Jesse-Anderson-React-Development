@@ -1,10 +1,12 @@
 import { Schema, model, Document } from 'mongoose';
 import bcrypt from 'bcrypt';
+import commentSchema, { CommentDocument } from './Comment.js';
 
 // Define an interface for the User document
 interface IUser extends Document {
   firstname: string;
   email: string;
+  comments: CommentDocument[];
   createdAt?: Date;
   updatedAt?: Date;
   password: string;
@@ -31,6 +33,7 @@ const userSchema = new Schema<IUser>(
       required: true,
       minlength: 5,
     },
+    comments: [commentSchema]
   },
   {
     timestamps: true,

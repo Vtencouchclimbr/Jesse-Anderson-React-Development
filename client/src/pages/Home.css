@@ -1,15 +1,4 @@
 
-
-.welcome {
-  color: antiquewhite;
-}
-
-@media (min-width: 1200px) {
-  .welcome {
-    align-items: start;
-  }
-}
-
 @media (min-width: 1200px) {
   .titleText {
     font-size: 30px;
@@ -20,16 +9,12 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .cardTitle {
-    align-items: center;
-  }
-}
+
 
 @media (min-width: 1200px) {
   .img-fluid {
     width: 800px;
-    height: auto;
+    height: 550px;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
   }
 }
@@ -98,17 +83,34 @@
   }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .logOption {
    display: flex;
    flex-direction: column;
    justify-content: start;
   }
-}
+} */
 
 @media (min-width: 1200px) {
   .logContainer {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
+@media (min-width: 1200px) {
+  .cardTitle {
+    align-items: center;
+  }
+}
+
+.welcome {
+  color: antiquewhite;
+}
+
+@media (min-width: 1200px) {
+  .welcome {
+    align-items: start;
+  }
+}

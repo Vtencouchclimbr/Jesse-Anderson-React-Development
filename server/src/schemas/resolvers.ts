@@ -1,4 +1,4 @@
-import { User } from '../models/index.js';
+import User from '../models/User.js';
 import { signToken, AuthenticationError } from '../utils/auth.js';
 
 interface AddUserArgs {
@@ -6,6 +6,7 @@ interface AddUserArgs {
     firstname: string;
     email: string;
     password: string;
+    comment: string[];
   }
 }
 
@@ -18,12 +19,16 @@ interface UserArgs {
   email: string;
 }
 
-
+// interface AddCommentArgs {
+//   input:{
+//     userText: string;
+//   }
+// }
 
 const resolvers = {
   Query: {
     user: async (_parent: any, { email }: UserArgs) => {
-      return User.findOne({ email }).populate('');
+      return User.findOne({ email }).populate('comment');
     },
     // Query to get the authenticated user's information
     // The 'me' query relies on the context to check if the user is authenticated
@@ -39,8 +44,9 @@ const resolvers = {
   Mutation: {
     addUser: async (_parent: any, { input }: AddUserArgs) => {
       // Create a new user with the provided firstname, email, and password
-      const { firstname, email, password } = input;
-      const user = await User.create({ firstname, email, password });
+      const { firstname, email, password, comment } = input;
+      
+      const user = await User.create({ firstname, email, password, comment });
       
       // Sign a token with the user's information
       const token = signToken(user.email, user._id);
@@ -75,6 +81,25 @@ const resolvers = {
       // Return the token and the user
       return { token, user };
     },
+
+    // saveComment: async (_parent: any, { input }: AddCommentArgs, context: any) => {
+    //   if (context.user) {
+    //     return User.findOneAndUpdate(
+    //       { _id: context.user._id },
+    //       {
+    //         $addToSet: {
+    //           comments: { ...input },
+    //         },
+    //       },
+    //       {
+    //         new: true,
+    //         runValidators: true,
+    //       }
+    //     );
+    //   }
+    //   throw AuthenticationError;
+    //   ('You need to be logged in!');
+    // },
   },
 };
 

@@ -15,7 +15,8 @@ function Contact() {
   const [formState, setFormState] = useState({
     firstname: "",
     email: "",
-    password: ""
+    password: "",
+    comment: [],
   });
   const [addUser, { error, data }] = useMutation(ADD_USER);
    
@@ -47,7 +48,7 @@ function Contact() {
             {data ? (
               <p>
                 Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
+                <Link to="/Contact"></Link>
               </p>
             ) : (
     <div className="d-flex flex-column justify-content-center flex-lg-row flex-grow-1" style={{
@@ -95,6 +96,18 @@ function Contact() {
             className="form-control shadow"
             type="password"
             placeholder="********"
+          />
+        </div>
+
+        {/* Comments */}
+        <div className="col-md-8 col-lg-6">
+          <input
+            value={formState.comment}
+            name="comment"
+            onChange={handleChange}
+            className="form-control shadow"
+            type="text"
+            placeholder="Your message here"
           />
         </div>
 
