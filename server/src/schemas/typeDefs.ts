@@ -4,17 +4,27 @@ const typeDefs = `
     firstname: String!
     email: String!
     password: String!
+    comments: [String]
   }
 
   input UserInput {
     firstname: String!
     email: String!
     password: String!
+    comment: [String]
   }
   
   type Auth {
     token: ID!
     user: User
+  }
+
+  type Comment {
+  comment: [String]
+  }
+
+  input Comment {
+    comment: [String]
   }
 
   type Query {

@@ -1,4 +1,5 @@
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+// import { setContext } from '@apollo/client/link/context';
 
 import NavTabs from './components/NavTabs.tsx';
 import Resume from './pages/Resume.tsx';
@@ -6,6 +7,25 @@ import Home from './pages/Home.tsx';
 import Portfolio from './pages/Portfolio.tsx';
 import Contact from './pages/Contact.tsx';
 import './App.css';
+
+// const httpLink = createHttpLink({
+//   uri: '/graphql',
+// });
+
+// const authLink = setContext((_, { headers }) => {
+//   const token = localStorage.getItem('id_token');
+//   return {
+//     headers: {
+//       ...headers,
+//       authorization: token ? `Bearer ${token}` : '',
+//     },
+//   };
+// });
+
+// const client = new ApolloClient({
+//   link: authLink.concat(httpLink),
+//   cache: new InMemoryCache(),
+// });
 
 const client = new ApolloClient({
   uri: '/graphql',
